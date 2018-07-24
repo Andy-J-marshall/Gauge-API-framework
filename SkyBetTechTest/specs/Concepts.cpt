@@ -1,0 +1,9 @@
+# Find and delete the most recently created fixture
+* Find the most recently created fixture by ID
+* Response is returned with status code "200"
+* Delete last created fixture by last fixture ID
+* Response is returned with status code "200"
+
+# Assert the most recently created fixture no longer exists
+* Find the most recently created fixture by ID
+* Response is returned with status code "404"

@@ -1,0 +1,198 @@
+[
+  {
+    "footballFullState": {
+      "period": "SECOND_HALF",
+      "teams": [
+        {
+          "teamId": "HOME",
+          "name": "Dagenham-&-Redbridge",
+          "association": "HOME"
+        },
+        {
+          "teamId": "AWAY",
+          "name": "\u00d6sterreich",
+          "association": "AWAY"
+        }
+      ],
+      "awayTeam": "\u00d6sterreich",
+      "finished": false,
+      "started": true,
+      "redCards": [
+
+      ],
+      "possibles": [
+
+      ],
+      "gameTimeInSeconds": 2656,
+      "corners": [
+
+      ],
+      "startDateTime": "2018-03-20T10:49:38.655Z",
+      "homeTeam": "Dagenham & Redbridge",
+      "yellowCards": [
+
+      ],
+      "goals": [
+        {
+          "period": "FIRST_HALF",
+          "penalty": false,
+          "teamId": "1",
+          "id": 678606,
+          "confirmed": true,
+          "ownGoal": false,
+          "clockTime": 640,
+          "playerId": 560617
+        },
+        {
+          "period": "FIRST_HALF",
+          "penalty": false,
+          "teamId": "2",
+          "id": 164002,
+          "confirmed": true,
+          "ownGoal": false,
+          "clockTime": 864,
+          "playerId": 60817
+        },
+        {
+          "period": "FIRST_HALF",
+          "penalty": false,
+          "teamId": "1",
+          "id": 267245,
+          "confirmed": true,
+          "ownGoal": false,
+          "clockTime": 1312,
+          "playerId": 136629
+        },
+        {
+          "period": "FIRST_HALF",
+          "penalty": false,
+          "teamId": "2",
+          "id": 758030,
+          "confirmed": true,
+          "ownGoal": false,
+          "clockTime": 1760,
+          "playerId": 131840
+        }
+      ]
+    },
+    "fixtureId": "1",
+    "fixtureStatus": {
+      "displayed": false,
+      "suspended": true
+    }
+  },
+  {
+    "footballFullState": {
+      "period": "FIRST_HALF",
+      "teams": [
+        {
+          "teamId": "HOME",
+          "name": "Manchester-United",
+          "association": "HOME"
+        },
+        {
+          "teamId": "AWAY",
+          "name": "Leeds-United",
+          "association": "AWAY"
+        }
+      ],
+      "awayTeam": "Leeds United",
+      "finished": false,
+      "started": true,
+      "redCards": [
+
+      ],
+      "possibles": [
+
+      ],
+      "gameTimeInSeconds": 900,
+      "corners": [
+
+      ],
+      "startDateTime": "2018-03-20T10:49:38.655Z",
+      "homeTeam": "Manchester United",
+      "yellowCards": [
+
+      ],
+      "goals": [
+        {
+          "period": "FIRST_HALF",
+          "penalty": false,
+          "teamId": "1",
+          "id": 678606,
+          "confirmed": true,
+          "ownGoal": false,
+          "clockTime": 640,
+          "playerId": 560617
+        },
+        {
+          "period": "FIRST_HALF",
+          "penalty": false,
+          "teamId": "2",
+          "id": 164002,
+          "confirmed": true,
+          "ownGoal": false,
+          "clockTime": 864,
+          "playerId": 60817
+        }
+      ]
+    },
+    "fixtureId": "2",
+    "fixtureStatus": {
+      "displayed": true,
+      "suspended": false
+    }
+  },
+  {
+    "footballFullState": {
+      "period": "FIRST_HALF",
+      "teams": [
+        {
+          "teamId": "HOME",
+          "name": "Garforth-FC",
+          "association": "HOME"
+        },
+        {
+          "teamId": "AWAY",
+          "name": "York-FC",
+          "association": "AWAY"
+        }
+      ],
+      "awayTeam": "York FC",
+      "finished": false,
+      "started": true,
+      "redCards": [
+
+      ],
+      "possibles": [
+
+      ],
+      "gameTimeInSeconds": 950,
+      "corners": [
+
+      ],
+      "startDateTime": "2018-03-20T10:49:38.655Z",
+      "homeTeam": "Garforth FC",
+      "yellowCards": [
+
+      ],
+      "goals": [
+        {
+          "period": "FIRST_HALF",
+          "penalty": false,
+          "teamId": "1",
+          "id": 678606,
+          "confirmed": true,
+          "ownGoal": false,
+          "clockTime": 640,
+          "playerId": 560617
+        }
+      ]
+    },
+    "fixtureId": "3",
+    "fixtureStatus": {
+      "displayed": false,
+      "suspended": true
+    }
+  }
+]
