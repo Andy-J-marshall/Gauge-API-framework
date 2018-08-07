@@ -3,12 +3,15 @@ package com.thoughtworks.gauge.maven.Endpoints;
 import com.google.gson.Gson;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Step;
+import com.thoughtworks.gauge.datastore.DataStore;
+import com.thoughtworks.gauge.datastore.DataStoreFactory;
 import com.thoughtworks.gauge.maven.Utils.Request;
 import com.thoughtworks.gauge.maven.Response.POJO.Fixture;
 import com.thoughtworks.gauge.maven.Response.POJO.FixtureStatus;
 import com.thoughtworks.gauge.maven.Response.POJO.FootballFullState;
 import com.thoughtworks.gauge.maven.Response.POJO.Team;
 
+import javax.xml.crypto.Data;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -16,16 +19,19 @@ import java.util.Random;
 import static com.thoughtworks.gauge.maven.Utils.BaseSteps.FIXTURE_ENDPOINT;
 
 public class StoreNewFixture {
+    public static final String FIXTURE_BODY = "fixture body";
     private Request request = new Request();
     private Random random = new Random();
+    private Gson gson = new Gson();
+    private DataStore dataStore = DataStoreFactory.getScenarioDataStore();
+
 
     @Step("Store a new fixture")
     public void storeNewFixture() throws UnirestException {
-        Gson gson = new Gson();
-        String url = FIXTURE_ENDPOINT;
         Fixture fixtureBody = createFixtureWithPresetData();
         String body = gson.toJson(fixtureBody);
-        request.postRequest(url, body);
+        dataStore.put(FIXTURE_BODY, fixtureBody);
+        request.postRequest(FIXTURE_ENDPOINT, body);
     }
 
     private Fixture createFixtureWithPresetData() {

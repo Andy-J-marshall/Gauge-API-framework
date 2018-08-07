@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
 import com.thoughtworks.gauge.maven.Response.POJO.Fixture;
@@ -43,7 +44,16 @@ public class Request {
                 .header("Content-Type", "application/json")
                 .body(body)
                 .asString();
+        logRequestInReports(url, body);
         dataStore.put(STATUS_CODE, response.getStatus());
         dataStore.put(POST_BODY, body);
+    }
+
+    private void logRequestInReports(String url, String requestBody) {
+        Gauge.writeMessage("Request url: " + url);
+        System.out.println("Request url: " + url);
+
+        Gauge.writeMessage("Request body: " + requestBody);
+        System.out.println("Request body: " + requestBody);
     }
 }
