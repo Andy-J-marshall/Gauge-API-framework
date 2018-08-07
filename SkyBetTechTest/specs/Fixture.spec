@@ -22,3 +22,8 @@ Delete the last created fixture ID
 * Response is returned with status code "200"
 * Find and delete the most recently created fixture
 * Assert the most recently created fixture no longer exists
+
+
+TODO
+add a hook to delete recently created fixtures
+improve reporting by logging the message
