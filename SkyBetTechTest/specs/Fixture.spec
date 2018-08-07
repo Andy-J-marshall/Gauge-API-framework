@@ -9,12 +9,11 @@ All returned fixtures have a fixtureId
 
 Newly created fixture has team ID of HOME
 -----------------------------------------
+tags: CleanupRequired
 * Store a new fixture
 * Response is returned with status code "200"
 * Get all fixtures
 * Assert the last created fixture has team ID of HOME in the first object
-//Clean up step
-* Find and delete the most recently created fixture
 
 Delete the last created fixture ID
 ----------------------------------
@@ -25,5 +24,8 @@ Delete the last created fixture ID
 
 
 TODO
-add a hook to delete recently created fixtures
+add a hook to delete recently created fixtures - DONE
 improve reporting by logging the message
+git ignore file
+More flexibility in the post
+Save fixture to datastore as an object
