@@ -15,4 +15,6 @@ target
 
 *.DS_Store
 *.xml
-
+*.idea/
+*.idea
+*.idea/*
