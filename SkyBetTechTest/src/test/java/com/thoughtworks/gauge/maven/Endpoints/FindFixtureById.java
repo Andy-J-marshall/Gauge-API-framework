@@ -5,10 +5,11 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
-import com.thoughtworks.gauge.maven.Utils.Request;
 import com.thoughtworks.gauge.maven.Response.POJO.Fixture;
+import com.thoughtworks.gauge.maven.Utils.Request;
 
-import static com.thoughtworks.gauge.maven.Utils.BaseSteps.*;
+import static com.thoughtworks.gauge.maven.Utils.BaseSteps.FIXTURE_BY_ID_ENDPOINT;
+import static com.thoughtworks.gauge.maven.Utils.BaseSteps.POST_BODY;
 
 public class FindFixtureById {
     private DataStore dataStore = DataStoreFactory.getScenarioDataStore();

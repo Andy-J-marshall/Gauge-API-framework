@@ -7,3 +7,5 @@
 # Assert the most recently created fixture no longer exists
 * Find the most recently created fixture by ID
 * Response is returned with status code "404"
+* Get all fixtures
+* Check the last created fixture ID no longer exists

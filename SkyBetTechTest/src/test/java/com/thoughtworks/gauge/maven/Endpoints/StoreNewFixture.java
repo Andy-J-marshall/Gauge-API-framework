@@ -5,13 +5,12 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
-import com.thoughtworks.gauge.maven.Utils.Request;
 import com.thoughtworks.gauge.maven.Response.POJO.Fixture;
 import com.thoughtworks.gauge.maven.Response.POJO.FixtureStatus;
 import com.thoughtworks.gauge.maven.Response.POJO.FootballFullState;
 import com.thoughtworks.gauge.maven.Response.POJO.Team;
+import com.thoughtworks.gauge.maven.Utils.Request;
 
-import javax.xml.crypto.Data;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -27,7 +26,7 @@ public class StoreNewFixture {
 
 
     @Step("Store a new fixture")
-    public void storeNewFixture() throws UnirestException {
+    public void storeNewFixtureDefaultValues() throws UnirestException {
         Fixture fixtureBody = createFixtureWithPresetData();
         String body = gson.toJson(fixtureBody);
         dataStore.put(FIXTURE_BODY, fixtureBody);

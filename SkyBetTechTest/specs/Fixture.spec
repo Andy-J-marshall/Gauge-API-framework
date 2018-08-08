@@ -28,4 +28,3 @@ add a hook to delete recently created fixtures - DONE
 improve reporting by logging the message
 git ignore file
 More flexibility in the post
-Save fixture to datastore as an object and use it in subsequest GETs
