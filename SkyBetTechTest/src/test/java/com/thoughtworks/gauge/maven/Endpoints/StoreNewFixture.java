@@ -2,6 +2,7 @@ package com.thoughtworks.gauge.maven.Endpoints;
 
 import com.google.gson.Gson;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
@@ -33,10 +34,25 @@ public class StoreNewFixture {
         request.postRequest(FIXTURE_ENDPOINT, body);
     }
 
-    private Fixture createFixtureWithPresetData() {
+    private FixtureStatus fixtureStatus(Boolean displayed, Boolean suspended) {
         FixtureStatus fixtureStatus = new FixtureStatus();
-        fixtureStatus.setDisplayed(true);
-        fixtureStatus.setSuspended(true);
+        fixtureStatus.setDisplayed(displayed);
+        fixtureStatus.setSuspended(suspended);
+        return fixtureStatus;
+    }
+
+    private Team team(String association, String name, String teamId) {
+        Team team = new Team();
+        team.setAssociation(association);
+        team.setName(name);
+        team.setTeamId(teamId);
+        return team;
+    }
+
+    private Fixture createFixtureWithPresetData() {
+        FixtureStatus fixtureStatus = fixtureStatus(true, true);
+//        Team homeTeam = team("HOME", "Barcelona", "HOME");
+//        Team awayTeam = team()
 
         Team homeTeam = new Team();
         homeTeam.setAssociation("HOME");

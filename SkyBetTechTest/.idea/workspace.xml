@@ -16,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/specs/Fixture.spec">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+              <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -25,18 +25,8 @@
       <file leaf-file-name="StoreNewFixture.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Endpoints/StoreNewFixture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FindFixtureById.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Endpoints/FindFixtureById.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="154">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -46,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/specs/Concepts.cpt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -55,8 +45,8 @@
       <file leaf-file-name="GetFixtures.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Endpoints/GetFixtures.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+            <state relative-caret-position="484">
+              <caret line="61" column="46" lean-forward="true" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -91,10 +81,10 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Utils/Request.java" />
-        <option value="$PROJECT_DIR$/specs/Fixture.spec" />
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Endpoints/FixtureIdDelete.java" />
         <option value="$PROJECT_DIR$/specs/Concepts.cpt" />
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Endpoints/FindFixtureById.java" />
+        <option value="$PROJECT_DIR$/specs/Fixture.spec" />
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Endpoints/GetFixtures.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Endpoints/StoreNewFixture.java" />
       </list>
@@ -109,7 +99,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="-147" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
@@ -216,7 +206,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gauge Execution.Delete the last created fixture ID">
+  <component name="RunManager" selected="Gauge Execution.Fixture.spec">
     <configuration name="Delete the last created fixture ID" type="executeSpecs" factoryName="Gauge Execution" temporary="true">
       <setting name="environment" value="" />
       <setting name="specsToExecute" value="$PROJECT_DIR$/specs/Fixture.spec:18" />
@@ -347,8 +337,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Gauge Execution.Delete the last created fixture ID" />
-        <item index="1" class="java.lang.String" itemvalue="Gauge Execution.Fixture.spec" />
+        <item index="0" class="java.lang.String" itemvalue="Gauge Execution.Fixture.spec" />
+        <item index="1" class="java.lang.String" itemvalue="Gauge Execution.Delete the last created fixture ID" />
         <item index="2" class="java.lang.String" itemvalue="Gauge Execution.Newly created fixture has team ID of HOME" />
         <item index="3" class="java.lang.String" itemvalue="Gauge Execution.Fixture.spec (1)" />
       </list>
@@ -374,23 +364,23 @@
     <history-entry file="Delete_the_last_created_fixture_ID - 2018.08.08 at 11h 24m 34s.xml">
       <configuration name="Delete the last created fixture ID" configurationId="executeSpecs" />
     </history-entry>
+    <history-entry file="Delete_the_last_created_fixture_ID - 2018.08.08 at 11h 26m 09s.xml">
+      <configuration name="Delete the last created fixture ID" configurationId="executeSpecs" />
+    </history-entry>
+    <history-entry file="Delete_the_last_created_fixture_ID - 2018.08.08 at 11h 27m 42s.xml">
+      <configuration name="Delete the last created fixture ID" configurationId="executeSpecs" />
+    </history-entry>
+    <history-entry file="Delete_the_last_created_fixture_ID - 2018.08.08 at 11h 39m 10s.xml">
+      <configuration name="Delete the last created fixture ID" configurationId="executeSpecs" />
+    </history-entry>
     <history-entry file="Fixture_spec - 2018.08.08 at 11h 18m 30s.xml">
       <configuration name="Fixture.spec" configurationId="executeSpecs" />
     </history-entry>
     <history-entry file="Fixture_spec - 2018.08.08 at 11h 24m 10s.xml">
       <configuration name="Fixture.spec" configurationId="executeSpecs" />
     </history-entry>
-    <history-entry file="Newly_created_fixture_has_team_ID_of_HOME - 2018.08.07 at 23h 57m 07s.xml">
-      <configuration name="Newly created fixture has team ID of HOME" configurationId="executeSpecs" />
-    </history-entry>
-    <history-entry file="Newly_created_fixture_has_team_ID_of_HOME - 2018.08.08 at 00h 03m 07s.xml">
-      <configuration name="Newly created fixture has team ID of HOME" configurationId="executeSpecs" />
-    </history-entry>
-    <history-entry file="Newly_created_fixture_has_team_ID_of_HOME - 2018.08.08 at 00h 03m 59s.xml">
-      <configuration name="Newly created fixture has team ID of HOME" configurationId="executeSpecs" />
-    </history-entry>
-    <history-entry file="Newly_created_fixture_has_team_ID_of_HOME - 2018.08.08 at 00h 05m 22s.xml">
-      <configuration name="Newly created fixture has team ID of HOME" configurationId="executeSpecs" />
+    <history-entry file="Fixture_spec - 2018.08.08 at 11h 39m 29s.xml">
+      <configuration name="Fixture.spec" configurationId="executeSpecs" />
     </history-entry>
     <history-entry file="Newly_created_fixture_has_team_ID_of_HOME - 2018.08.08 at 00h 07m 01s.xml">
       <configuration name="Newly created fixture has team ID of HOME" configurationId="executeSpecs" />
@@ -412,7 +402,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -423,12 +413,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26930895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18849841" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -603,18 +593,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Endpoints/StoreNewFixture.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Response/POJO/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Endpoints/GetFixtures.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        <state relative-caret-position="484">
+          <caret line="61" column="46" lean-forward="true" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -622,7 +615,15 @@
     <entry file="file://$PROJECT_DIR$/specs/Concepts.cpt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/gauge/maven/Endpoints/StoreNewFixture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -630,7 +631,7 @@
     <entry file="file://$PROJECT_DIR$/specs/Fixture.spec">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding />
         </state>
       </provider>
