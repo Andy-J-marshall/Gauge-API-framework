@@ -1,23 +1,11 @@
 package com.thoughtworks.gauge.maven.Response.POJO;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Builder @Setter
 public class FixtureStatus {
     private Boolean displayed;
     private Boolean suspended;
-
-    public Boolean getDisplayed() {
-        return displayed;
-    }
-
-    public void setDisplayed(Boolean displayed) {
-        this.displayed = displayed;
-    }
-
-    public Boolean getSuspended() {
-        return suspended;
-    }
-
-    public void setSuspended(Boolean suspended) {
-        this.suspended = suspended;
-    }
-
 }

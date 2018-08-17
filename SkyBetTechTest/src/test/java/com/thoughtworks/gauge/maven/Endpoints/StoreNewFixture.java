@@ -2,7 +2,6 @@ package com.thoughtworks.gauge.maven.Endpoints;
 
 import com.google.gson.Gson;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
@@ -21,12 +20,10 @@ import static com.thoughtworks.gauge.maven.Utils.BaseSteps.FIXTURE_ENDPOINT;
 public class StoreNewFixture {
     public static final String FIXTURE_BODY = "fixture body";
     private Request request = new Request();
-    private Random random = new Random();
     private Gson gson = new Gson();
     private DataStore dataStore = DataStoreFactory.getScenarioDataStore();
 
-
-    @Step("Store a new fixture")
+    @Step("Store a new fixture for a completed match with preset data")
     public void storeNewFixtureDefaultValues() throws UnirestException {
         Fixture fixtureBody = createFixtureWithPresetData();
         String body = gson.toJson(fixtureBody);
@@ -35,54 +32,62 @@ public class StoreNewFixture {
     }
 
     private FixtureStatus fixtureStatus(Boolean displayed, Boolean suspended) {
-        FixtureStatus fixtureStatus = new FixtureStatus();
-        fixtureStatus.setDisplayed(displayed);
-        fixtureStatus.setSuspended(suspended);
+        FixtureStatus fixtureStatus = FixtureStatus.builder()
+                .displayed(displayed)
+                .suspended(suspended)
+                .build();
         return fixtureStatus;
     }
 
-    private Team team(String association, String name, String teamId) {
-        Team team = new Team();
-        team.setAssociation(association);
-        team.setName(name);
-        team.setTeamId(teamId);
+    private Team team(String association, String name) {
+        Team team = Team.builder()
+                .association(association)
+                .name(name)
+                .teamId(idGeneratedAsString())
+                .build();
         return team;
+    }
+
+    private Fixture fixture(FootballFullState footballFullState, FixtureStatus fixtureStatus) {
+        Fixture fixture = Fixture.builder()
+                .footballFullState(footballFullState)
+                .fixtureId(idGeneratedAsString())
+                .fixtureStatus(fixtureStatus)
+                .build();
+        return fixture;
+    }
+
+    private FootballFullState footballFullState(String homeTeam, String awayTeam, Boolean finished, int gameTimeInSeconds, String period, String startDateTime, Boolean started, List<Team> team) {
+        FootballFullState footballFullState = FootballFullState.builder()
+                .homeTeam(homeTeam)
+                .awayTeam(awayTeam)
+                .finished(finished)
+                .gameTimeInSeconds(gameTimeInSeconds)
+                .period(period)
+                .startDateTime(startDateTime)
+                .started(started)
+                .teams(team)
+                .build();
+        return footballFullState;
     }
 
     private Fixture createFixtureWithPresetData() {
         FixtureStatus fixtureStatus = fixtureStatus(true, true);
-//        Team homeTeam = team("HOME", "Barcelona", "HOME");
-//        Team awayTeam = team()
+        Team homeTeam = team("HOME", "Barcelona");
+        Team awayTeam = team("AWAY", "Barnet");
 
-        Team homeTeam = new Team();
-        homeTeam.setAssociation("HOME");
-        homeTeam.setName("Barcelona");
-        homeTeam.setTeamId("HOME");
+        List<Team> teams = new ArrayList<>();
+        teams.add(homeTeam);
+        teams.add(awayTeam);
 
-        Team awayTeam = new Team();
-        awayTeam.setAssociation("AWAY");
-        awayTeam.setName("Barnet");
-        awayTeam.setTeamId("AWAY");
+        FootballFullState footballFullState = footballFullState("Barcelona", "Barnet", true, 5400, "first half", "2018-07-22T10:49:38.655Z", true, teams);
 
-        List<Team> team = new ArrayList<>();
-        team.add(homeTeam);
-        team.add(awayTeam);
+        return fixture(footballFullState, fixtureStatus);
+    }
 
-        FootballFullState footballFullState = new FootballFullState();
-        footballFullState.setHomeTeam("Barcelona");
-        footballFullState.setAwayTeam("Barnet");
-        footballFullState.setFinished(true);
-        footballFullState.setGameTimeInSeconds(5400);
-        footballFullState.setPeriod("first half");
-        footballFullState.setStartDateTime("2018-07-22T10:49:38.655Z");
-        footballFullState.setStarted(true);
-        footballFullState.setTeams(team);
-
-        Fixture fixture = new Fixture();
-        fixture.setFootballFullState(footballFullState);
-        fixture.setFixtureId(String.valueOf(3 + random.nextInt(1000)));
-        fixture.setFixtureStatus(fixtureStatus);
-
-        return fixture;
+    private String idGeneratedAsString() {
+        Random random = new Random();
+        Integer randomInt = random.nextInt() + 3;
+        return randomInt.toString();
     }
 }

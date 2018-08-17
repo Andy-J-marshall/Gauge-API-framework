@@ -10,14 +10,14 @@ All returned fixtures have a fixtureId
 Newly created fixture has team ID of HOME
 -----------------------------------------
 tags: CleanupRequired
-* Store a new fixture
+* Store a new fixture for a completed match with preset data
 * Response is returned with status code "200"
 * Get all fixtures
 * Assert the last created fixture has team ID of HOME in the first object
 
 Delete the last created fixture ID
 ----------------------------------
-* Store a new fixture
+* Store a new fixture for a completed match with preset data
 * Response is returned with status code "200"
 * Find and delete the most recently created fixture
 * Assert the most recently created fixture no longer exists
