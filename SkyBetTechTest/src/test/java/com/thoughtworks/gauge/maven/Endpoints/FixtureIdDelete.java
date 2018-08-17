@@ -3,7 +3,6 @@ package com.thoughtworks.gauge.maven.Endpoints;
 import com.google.gson.Gson;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.AfterScenario;
-import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
@@ -28,7 +27,7 @@ public class FixtureIdDelete {
         request.deleteRequest(url);
     }
 
-    @AfterScenario(tags = "CleanupRequired")
+    @AfterScenario(tags = "CleanupAfterTest")
     public void cleanUpStep() throws UnirestException {
         FindFixtureById findFixtureById = new FindFixtureById();
         findFixtureById.findLastCreatedId();

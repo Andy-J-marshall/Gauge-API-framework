@@ -9,7 +9,7 @@ All returned fixtures have a fixtureId
 
 Newly created fixture has team ID of HOME
 -----------------------------------------
-tags: CleanupRequired
+tags: CleanupAfterTest
 * Store a new fixture for a completed match with preset data
 * Response is returned with status code "200"
 * Get all fixtures
