@@ -1,21 +1,22 @@
-package com.thoughtworks.gauge.maven.Endpoints;
+package com.thoughtworks.gauge.maven.Steps;
 
-import com.google.gson.Gson;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
+import com.thoughtworks.gauge.maven.Endpoints.GetFixture;
 import com.thoughtworks.gauge.maven.Response.POJO.Fixture;
 import com.thoughtworks.gauge.maven.Utils.Request;
 import org.junit.Assert;
 
-import static com.thoughtworks.gauge.maven.Utils.BaseSteps.*;
+import static com.thoughtworks.gauge.maven.Utils.BaseSteps.GET_FIXTURES_ENDPOINT;
+import static com.thoughtworks.gauge.maven.Utils.BaseSteps.RESPONSE_BODY;
 
-public class GetFixtures {
+public class GetFixtureSteps {
     private DataStore dataStore = DataStoreFactory.getScenarioDataStore();
-    private Gson gson = new Gson();
     private Request request = new Request();
+    private GetFixture getFixture = new GetFixture();
 
     @Step("Get all fixtures")
     public void getFixtures() throws UnirestException {
@@ -26,7 +27,7 @@ public class GetFixtures {
     @Step("Assert 3 fixtures are returned in the response and they have a fixtureId")
     public void assertFixtureId() {
         Fixture[] lastResponse = (Fixture[]) dataStore.get(RESPONSE_BODY);
-        Assert.assertEquals(3, lastResponse.length);
+        Assert.assertEquals("Three fixtures were expected in the response", 3, lastResponse.length);
 
         for (Fixture fixture : lastResponse) {
             String fixtureId = fixture.getFixtureId();
@@ -38,9 +39,7 @@ public class GetFixtures {
     @Step("Assert the last created fixture has team ID of HOME in the first object")
     public void assertTeamIdInLastFixture() {
         Fixture[] lastResponse = (Fixture[]) dataStore.get(RESPONSE_BODY);
-        String stringPostBody = (String) dataStore.get(POST_BODY);
-        Fixture postBody = gson.fromJson(stringPostBody, Fixture.class);
-        String fixtureId = postBody.getFixtureId();
+        String fixtureId = getFixture.findFixtureId();
 
         for (Fixture fixture : lastResponse) {
             if (fixtureId.equals(fixture.getFixtureId())) {
@@ -51,15 +50,12 @@ public class GetFixtures {
     }
 
     @Step("Check the last created fixture ID no longer exists")
-    public void assertFixtureIdDeleted() throws UnirestException {
+    public void assertFixtureIdDeleted() {
         Fixture[] lastResponse = (Fixture[]) dataStore.get(RESPONSE_BODY);
-        String stringPostBody = (String) dataStore.get(POST_BODY);
-        Fixture postBody = gson.fromJson(stringPostBody, Fixture.class);
-        String fixtureId = postBody.getFixtureId();
+        String fixtureId = getFixture.findFixtureId();
 
         for (Fixture fixture : lastResponse) {
-            String responseFixtureId = fixture.getFixtureId();
-            if (responseFixtureId.equals(fixtureId)) {
+            if (fixtureId.equals(fixture.getFixtureId())) {
                 Assert.fail();
                 Gauge.writeMessage(String.format("fixtureId %s has not been deleted correctly", fixtureId));
             }

@@ -1,6 +1,11 @@
 Fixtures endpoint
 =================
 
+    | homeTeam    | awayTeam          |
+    |-------------|-------------------|
+    | Arsenal     | Leeds United      |
+    | Aston Villa | Manchester United |
+
 All returned fixtures have a fixtureId
 --------------------------------------
 * Get all fixtures
@@ -17,14 +22,10 @@ tags: CleanupAfterTest
 
 Delete the last created fixture ID
 ----------------------------------
-* Store a new fixture for a completed match with preset data
+* Store a new fixture for a completed match with home team <homeTeam> and away team <awayTeam>
 * Response is returned with status code "200"
 * Find and delete the most recently created fixture
 * Assert the most recently created fixture no longer exists
 
-
-TODO
-add a hook to delete recently created fixtures - DONE
-improve reporting by logging the message
-git ignore file
-More flexibility in the post
+TO DO:
+properties file for envs and endpoints

@@ -5,7 +5,6 @@ import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
 import org.junit.Assert;
 
-
 public class BaseSteps {
     public static final String HOST = "http://localhost:3000";
     public static final String FIXTURE_BY_ID_ENDPOINT = "/fixture/";
@@ -16,7 +15,6 @@ public class BaseSteps {
     public static final String POST_BODY = "postBody";
 
     DataStore dataStore = DataStoreFactory.getScenarioDataStore();
-
 
     @Step("Response is returned with status code <statusCode>")
     public void statusCode(int expectedStatusCode) {
