@@ -14,7 +14,7 @@ public class BaseSteps {
     public static final String RESPONSE_BODY = "responseBody";
     public static final String POST_BODY = "postBody";
 
-    DataStore dataStore = DataStoreFactory.getScenarioDataStore();
+    private DataStore dataStore = DataStoreFactory.getScenarioDataStore();
 
     @Step("Response is returned with status code <statusCode>")
     public void statusCode(int expectedStatusCode) {

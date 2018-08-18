@@ -15,7 +15,6 @@ public class Request {
     private DataStore dataStore = DataStoreFactory.getScenarioDataStore();
     private Gson gson = new Gson();
 
-
     public void deleteRequest(String url) throws UnirestException {
         HttpResponse<String> response = Unirest.delete(HOST + url)
                 .asString();
