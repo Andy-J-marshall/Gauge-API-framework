@@ -26,6 +26,3 @@ Delete the last created fixture ID
 * Response is returned with status code "200"
 * Find and delete the most recently created fixture
 * Assert the most recently created fixture no longer exists
-
-TO DO:
-properties file for envs and endpoints
