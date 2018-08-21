@@ -16,14 +16,14 @@ public class Request {
     private Gson gson = new Gson();
 
     public void deleteRequest(String url) throws UnirestException {
-        HttpResponse<String> response = Unirest.delete(HOST + url)
+        HttpResponse<String> response = Unirest.delete(System.getenv("HOST") + url)
                 .asString();
         int statusCode = response.getStatus();
         dataStore.put(STATUS_CODE, statusCode);
     }
 
     public void getRequest(String url) throws UnirestException {
-        HttpResponse<String> response = Unirest.get(HOST + url)
+        HttpResponse<String> response = Unirest.get(System.getenv("HOST") + url)
                 .asString();
         Integer statusCode = response.getStatus();
         dataStore.put(STATUS_CODE, statusCode);
@@ -39,7 +39,7 @@ public class Request {
     }
 
     public void postRequest(String url, String body) throws UnirestException {
-        HttpResponse<String> response = Unirest.post(HOST + url)
+        HttpResponse<String> response = Unirest.post(System.getenv("HOST") + url)
                 .header("Content-Type", "application/json")
                 .body(body)
                 .asString();

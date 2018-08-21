@@ -6,7 +6,6 @@ import com.thoughtworks.gauge.datastore.DataStoreFactory;
 import org.junit.Assert;
 
 public class BaseSteps {
-    public static final String HOST = "http://localhost:3000";
     public static final String FIXTURE_BY_ID_ENDPOINT = "/fixture/";
     public static final String FIXTURE_ENDPOINT = "/fixture";
     public static final String GET_FIXTURES_ENDPOINT = "/fixtures";
