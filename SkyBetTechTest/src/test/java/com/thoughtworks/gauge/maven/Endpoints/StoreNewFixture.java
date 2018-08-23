@@ -17,7 +17,7 @@ import java.util.Random;
 import static com.thoughtworks.gauge.maven.Utils.BaseSteps.FIXTURE_ENDPOINT;
 
 public class StoreNewFixture {
-    private static final String FIXTURE_BODY = "fixture body";
+    private static final String FIXTURE_BODY = "createFixture body";
     private Request request = new Request();
     private Gson gson = new Gson();
     private DataStore dataStore = DataStoreFactory.getScenarioDataStore();
@@ -28,37 +28,15 @@ public class StoreNewFixture {
         request.postRequest(FIXTURE_ENDPOINT, body);
     }
 
-    public Fixture createFixtureWithPresetData() {
-        FixtureStatus fixtureStatus = FixtureStatus.builder()
-                .displayed(true)
-                .suspended(false)
+    public Fixture createFixtureWithDefaultData() {
+        return Fixture.builder()
+                .footballFullState(footballFullStateWithDefaults())
+                .fixtureId(idGeneratedAsString())
+                .fixtureStatus(fixtureStatusWithDefault())
                 .build();
+    }
 
-        Team homeTeam = Team.builder()
-                .association("HOME")
-                .name("Barcelona")
-                .teamId(idGeneratedAsString())
-                .build();
-
-        Team awayTeam = Team.builder()
-                .association("AWAY")
-                .name("Barnet")
-                .teamId(idGeneratedAsString())
-                .build();
-
-        List<Team> teams = addTeamsToList(homeTeam, awayTeam);
-
-        FootballFullState footballFullState = FootballFullState.builder()
-                .homeTeam("Barcelona")
-                .awayTeam("Barnet")
-                .finished(true)
-                .gameTimeInSeconds(5400)
-                .period("first half")
-                .startDateTime("2018-07-22T10:49:38.655Z")
-                .started(true)
-                .teams(teams)
-                .build();
-
+    public Fixture createFixture(FootballFullState footballFullState, FixtureStatus fixtureStatus) {
         return Fixture.builder()
                 .footballFullState(footballFullState)
                 .fixtureId(idGeneratedAsString())
@@ -66,41 +44,82 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public List<Team> addTeamsToList(Team homeTeam, Team awayTeam) {
+    public FixtureStatus fixtureStatus(Boolean displayed, Boolean suspended) {
+        return FixtureStatus.builder()
+                .displayed(displayed)
+                .suspended(suspended)
+                .build();
+    }
+
+    public FixtureStatus fixtureStatusWithDefault() {
+        return FixtureStatus.builder()
+                .displayed(true)
+                .suspended(true)
+                .build();
+    }
+
+    public List<Team> addTeams(Team homeTeam, Team awayTeam) {
         List<Team> teams = new ArrayList<>();
         teams.add(homeTeam);
         teams.add(awayTeam);
         return teams;
     }
 
-    public FixtureStatus fixtureStatus(Boolean displayed, Boolean suspended) {
-        FixtureStatus fixtureStatus = FixtureStatus.builder()
-                .displayed(displayed)
-                .suspended(suspended)
-                .build();
-        return fixtureStatus;
+    public List<Team> addTeamsUsingValues(String homeTeam, String awayTeam) {
+        List<Team> teams = new ArrayList<>();
+        teams.add(team("HOME", homeTeam));
+        teams.add(team("AWAY", awayTeam));
+        return teams;
+    }
+
+    public List<Team> addTeamsWithDefaults() {
+        Team homeTeam = homeTeamWithDefault();
+        Team awayTeam = awayTeamWithDefault();
+        List<Team> teams = new ArrayList<>();
+        teams.add(homeTeam);
+        teams.add(awayTeam);
+        return teams;
     }
 
     public Team team(String association, String name) {
-        Team team = Team.builder()
+        return Team.builder()
                 .association(association)
                 .name(name)
                 .teamId(idGeneratedAsString())
                 .build();
-        return team;
     }
 
-    public Fixture fixture(FootballFullState footballFullState, FixtureStatus fixtureStatus) {
-        Fixture fixture = Fixture.builder()
-                .footballFullState(footballFullState)
-                .fixtureId(idGeneratedAsString())
-                .fixtureStatus(fixtureStatus)
+    public Team homeTeamWithDefault() {
+        return Team.builder()
+                .association("HOME")
+                .name("Barnet")
+                .teamId(idGeneratedAsString())
                 .build();
-        return fixture;
+    }
+
+    public Team awayTeamWithDefault() {
+        return Team.builder()
+                .association("AWAY")
+                .name("Real Madrid")
+                .teamId(idGeneratedAsString())
+                .build();
+    }
+
+    public FootballFullState footballFullStateWithDefaults() {
+        return FootballFullState.builder()
+                .homeTeam("Barcelona")
+                .awayTeam("Barnet")
+                .finished(true)
+                .gameTimeInSeconds(5400)
+                .period("first half")
+                .startDateTime("2018-07-22T10:49:38.655Z")
+                .started(true)
+                .teams(addTeamsWithDefaults())
+                .build();
     }
 
     public FootballFullState footballFullState(String homeTeam, String awayTeam, Boolean finished, int gameTimeInSeconds, String period, String startDateTime, Boolean started, List<Team> team) {
-        FootballFullState footballFullState = FootballFullState.builder()
+        return FootballFullState.builder()
                 .homeTeam(homeTeam)
                 .awayTeam(awayTeam)
                 .finished(finished)
@@ -110,7 +129,6 @@ public class StoreNewFixture {
                 .started(started)
                 .teams(team)
                 .build();
-        return footballFullState;
     }
 
     private String idGeneratedAsString() {
