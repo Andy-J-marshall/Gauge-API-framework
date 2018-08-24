@@ -75,10 +75,7 @@ public class StoreNewFixture {
     public List<Team> addTeamsWithDefaults() {
         Team homeTeam = homeTeamWithDefault();
         Team awayTeam = awayTeamWithDefault();
-        List<Team> teams = new ArrayList<>();
-        teams.add(homeTeam);
-        teams.add(awayTeam);
-        return teams;
+        return addTeams(homeTeam, awayTeam);
     }
 
     public Team team(String association, String name) {
