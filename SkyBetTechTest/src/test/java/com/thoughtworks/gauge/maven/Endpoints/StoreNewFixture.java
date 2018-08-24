@@ -4,10 +4,7 @@ import com.google.gson.Gson;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
-import com.thoughtworks.gauge.maven.Response.POJO.Fixture;
-import com.thoughtworks.gauge.maven.Response.POJO.FixtureStatus;
-import com.thoughtworks.gauge.maven.Response.POJO.FootballFullState;
-import com.thoughtworks.gauge.maven.Response.POJO.Team;
+import com.thoughtworks.gauge.maven.Response.POJO.*;
 import com.thoughtworks.gauge.maven.Utils.Request;
 
 import java.util.ArrayList;
@@ -28,18 +25,18 @@ public class StoreNewFixture {
         request.postRequest(FIXTURE_ENDPOINT, body);
     }
 
-    public Fixture createFixtureWithDefaultData() {
+    public Fixture createFixtureWithGeneratedValues() {
         return Fixture.builder()
-                .footballFullState(footballFullStateWithDefaults())
-                .fixtureId(idGeneratedAsString())
-                .fixtureStatus(fixtureStatusWithDefault())
+                .footballFullState(footballFullStateWithGeneratedValues())
+                .fixtureId(randomlyGeneratedIdAsString())
+                .fixtureStatus(fixtureStatusWithGeneratedValues())
                 .build();
     }
 
     public Fixture createFixture(FootballFullState footballFullState, FixtureStatus fixtureStatus) {
         return Fixture.builder()
                 .footballFullState(footballFullState)
-                .fixtureId(idGeneratedAsString())
+                .fixtureId(randomlyGeneratedIdAsString())
                 .fixtureStatus(fixtureStatus)
                 .build();
     }
@@ -51,7 +48,7 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public FixtureStatus fixtureStatusWithDefault() {
+    public FixtureStatus fixtureStatusWithGeneratedValues() {
         return FixtureStatus.builder()
                 .displayed(true)
                 .suspended(true)
@@ -65,16 +62,16 @@ public class StoreNewFixture {
         return teams;
     }
 
-    public List<Team> addTeamsUsingValues(String homeTeam, String awayTeam) {
+    public List<Team> addTeams(String homeTeam, String awayTeam) {
         List<Team> teams = new ArrayList<>();
         teams.add(team("HOME", homeTeam));
         teams.add(team("AWAY", awayTeam));
         return teams;
     }
 
-    public List<Team> addTeamsWithDefaults() {
-        Team homeTeam = homeTeamWithDefault();
-        Team awayTeam = awayTeamWithDefault();
+    public List<Team> addTeamsWithGeneratedValues() {
+        Team homeTeam = homeTeamWithGeneratedValues();
+        Team awayTeam = awayTeamWithGeneratedValues();
         return addTeams(homeTeam, awayTeam);
     }
 
@@ -82,40 +79,61 @@ public class StoreNewFixture {
         return Team.builder()
                 .association(association)
                 .name(name)
-                .teamId(idGeneratedAsString())
+                .teamId(randomlyGeneratedIdAsString())
                 .build();
     }
 
-    public Team homeTeamWithDefault() {
+    public Team homeTeamWithGeneratedValues() {
         return Team.builder()
                 .association("HOME")
                 .name("Barnet")
-                .teamId(idGeneratedAsString())
+                .teamId(randomlyGeneratedIdAsString())
                 .build();
     }
 
-    public Team awayTeamWithDefault() {
+    public Team awayTeamWithGeneratedValues() {
         return Team.builder()
                 .association("AWAY")
                 .name("Real Madrid")
-                .teamId(idGeneratedAsString())
+                .teamId(randomlyGeneratedIdAsString())
                 .build();
     }
 
-    public FootballFullState footballFullStateWithDefaults() {
+    public List<Goal> addGoalsWithGeneratedValues() {
+        List<Goal> goals = new ArrayList<>();
+        goals.add(goalWithGeneratedValues());
+        goals.add(goalWithGeneratedValues());
+        return goals;
+    }
+
+    public Goal goalWithGeneratedValues() {
+        return Goal.builder()
+                .clockTime(randomlyGeneratedTimeInSeconds())
+                .confirmed(true)
+                .id(randomlyGeneratedId())
+                .ownGoal(false)
+                .penalty(false)
+                .period("First Half")
+                .playerId(randomlyGeneratedId())
+                .teamId(randomlyGeneratedIdAsString())
+                .build();
+    }
+
+    public FootballFullState footballFullStateWithGeneratedValues() {
         return FootballFullState.builder()
                 .homeTeam("Barcelona")
                 .awayTeam("Barnet")
                 .finished(true)
                 .gameTimeInSeconds(5400)
-                .period("first half")
+                .period("First Half")
                 .startDateTime("2018-07-22T10:49:38.655Z")
                 .started(true)
-                .teams(addTeamsWithDefaults())
+                .teams(addTeamsWithGeneratedValues())
+                .goals(addGoalsWithGeneratedValues())
                 .build();
     }
 
-    public FootballFullState footballFullState(String homeTeam, String awayTeam, Boolean finished, int gameTimeInSeconds, String period, String startDateTime, Boolean started, List<Team> team) {
+    public FootballFullState footballFullState(String homeTeam, String awayTeam, Boolean finished, int gameTimeInSeconds, String period, String startDateTime, Boolean started, List<Team> team, List<Goal> goal) {
         return FootballFullState.builder()
                 .homeTeam(homeTeam)
                 .awayTeam(awayTeam)
@@ -125,13 +143,22 @@ public class StoreNewFixture {
                 .startDateTime(startDateTime)
                 .started(started)
                 .teams(team)
+                .goals(goal)
                 .build();
     }
 
-    private String idGeneratedAsString() {
+    private Integer randomlyGeneratedId() {
         Random random = new Random();
-        Integer randomInt = random.nextInt() + 3;
-        return randomInt.toString();
+        return random.nextInt() + 3;
+    }
+
+    private String randomlyGeneratedIdAsString() {
+        return randomlyGeneratedId().toString();
+    }
+
+    private int randomlyGeneratedTimeInSeconds() {
+        Random random = new Random();
+        return random.nextInt(5399) + 1;
     }
 
     public String calculatePeriod(int timeInMinutes) {
