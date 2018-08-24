@@ -61,5 +61,17 @@ public class GetFixtureSteps {
             }
         }
     }
+
+    @Step("Check there are <numberOfGoals> goals in the last created fixture ID")
+    public void assertNumberOfGoals(int numberOfGoals) {
+        Fixture[] lastResponse = (Fixture[]) dataStore.get(RESPONSE_BODY);
+        String fixtureId = getFixture.findFixtureId();
+
+        for (Fixture fixture : lastResponse) {
+            if (fixtureId.equals(fixture.getFixtureId())) {
+                Assert.assertEquals("Number of goals is not correct", numberOfGoals, fixture.getFootballFullState().getGoals().size());
+            }
+        }
+    }
 }
 

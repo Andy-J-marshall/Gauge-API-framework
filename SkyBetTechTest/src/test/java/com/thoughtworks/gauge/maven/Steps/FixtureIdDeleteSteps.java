@@ -30,6 +30,6 @@ public class FixtureIdDeleteSteps {
         findFixtureByIdSteps.findLastCreatedId();
         deleteFixtureById();
         int statusCode = (int) dataStore.get(STATUS_CODE);
-        Assert.assertEquals("Status code was not 200", 200, statusCode);
+        Assert.assertEquals("Fixture cleanup was unsuccessful", 200, statusCode);
     }
 }

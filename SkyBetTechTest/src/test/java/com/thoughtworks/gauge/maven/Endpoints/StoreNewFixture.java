@@ -176,12 +176,23 @@ public class StoreNewFixture {
 
     private Integer randomlyGeneratedId() {
         Random random = new Random();
-        return random.nextInt() + 3;
+        return random.nextInt(90000) + 90003;
     }
 
     private String randomlyGeneratedIdAsString() {
         return randomlyGeneratedId().toString();
     }
+
+//    private int randomlyGeneratedId() {
+//        Random random = new Random();
+//        return random.nextInt() + 3;
+//    }
+//
+//    private String randomlyGeneratedIdAsString() {
+//        int id = randomlyGeneratedId();
+//        Integer integer = id;
+//        return integer.toString();
+//    }
 
     private int randomlyGeneratedTimeInSeconds() {
         Random random = new Random();
