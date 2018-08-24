@@ -6,8 +6,8 @@ import com.thoughtworks.gauge.datastore.DataStoreFactory;
 import org.junit.Assert;
 
 public class BaseSteps {
-    public static final String FIXTURE_BY_ID_ENDPOINT = "/fixture/";
-    public static final String FIXTURE_ENDPOINT = "/fixture";
+    public static final String FIXTURE_BY_ID_ENDPOINT = "/createFixture/";
+    public static final String FIXTURE_ENDPOINT = "/createFixture";
     public static final String GET_FIXTURES_ENDPOINT = "/fixtures";
     public static final String STATUS_CODE = "response";
     public static final String RESPONSE_BODY = "responseBody";

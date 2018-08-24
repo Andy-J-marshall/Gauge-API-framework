@@ -18,7 +18,7 @@ tags: CleanupAfterTest
 * Store a new fixture for a completed match with preset data
 * Response is returned with status code "200"
 * Get all fixtures
-* Assert the last created fixture has team ID of HOME in the first object
+* Assert the last created Fixture has team ID of HOME in the first object
 
 Delete the last created fixture ID
 ----------------------------------

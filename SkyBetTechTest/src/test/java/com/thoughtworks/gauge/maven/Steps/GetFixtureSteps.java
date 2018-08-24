@@ -36,7 +36,7 @@ public class GetFixtureSteps {
         }
     }
 
-    @Step("Assert the last created fixture has team ID of HOME in the first object")
+    @Step("Assert the last created Fixture has team ID of HOME in the first object")
     public void assertTeamIdInLastFixture() {
         Fixture[] lastResponse = (Fixture[]) dataStore.get(RESPONSE_BODY);
         String fixtureId = getFixture.findFixtureId();
