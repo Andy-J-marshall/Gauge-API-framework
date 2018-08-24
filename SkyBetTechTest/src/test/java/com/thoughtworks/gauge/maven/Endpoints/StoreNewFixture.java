@@ -27,17 +27,17 @@ public class StoreNewFixture {
 
     public Fixture createFixture() {
         return Fixture.builder()
-                .footballFullState(footballFullState())
                 .fixtureId(randomlyGeneratedIdAsString())
                 .fixtureStatus(fixtureStatus())
+                .footballFullState(footballFullState())
                 .build();
     }
 
     public Fixture createFixture(FootballFullState footballFullState, FixtureStatus fixtureStatus) {
         return Fixture.builder()
-                .footballFullState(footballFullState)
                 .fixtureId(randomlyGeneratedIdAsString())
                 .fixtureStatus(fixtureStatus)
+                .footballFullState(footballFullState)
                 .build();
     }
 
@@ -79,7 +79,7 @@ public class StoreNewFixture {
         return Team.builder()
                 .association(association)
                 .name(name)
-                .teamId(randomlyGeneratedIdAsString())
+                .teamId(association.toUpperCase())
                 .build();
     }
 
@@ -87,7 +87,7 @@ public class StoreNewFixture {
         return Team.builder()
                 .association("HOME")
                 .name("Barnet")
-                .teamId(randomlyGeneratedIdAsString())
+                .teamId("HOME")
                 .build();
     }
 
@@ -95,7 +95,7 @@ public class StoreNewFixture {
         return Team.builder()
                 .association("AWAY")
                 .name("Real Madrid")
-                .teamId(randomlyGeneratedIdAsString())
+                .teamId("AWAY")
                 .build();
     }
 
@@ -124,25 +124,25 @@ public class StoreNewFixture {
         return Goal.builder()
                 .clockTime(randomlyGeneratedTimeInSeconds())
                 .confirmed(true)
-                .id(randomlyGeneratedId())
+                .id(randomlyGeneratedIdAsString())
                 .ownGoal(false)
                 .penalty(false)
                 .period("First Half")
-                .playerId(randomlyGeneratedId())
-                .teamId(randomlyGeneratedIdAsString())
+                .playerId(randomlyGeneratedIdAsString())
+                .teamId("HOME")
                 .build();
     }
 
-    public Goal goal(int clockTime, boolean confirmed, boolean ownGoal, boolean penalty, String period) {
+    public Goal goal(int clockTime, boolean confirmed, boolean ownGoal, boolean penalty, String period, String teamId) {
         return Goal.builder()
                 .clockTime(clockTime)
                 .confirmed(confirmed)
-                .id(randomlyGeneratedId())
+                .id(randomlyGeneratedIdAsString())
                 .ownGoal(ownGoal)
                 .penalty(penalty)
                 .period(period)
-                .playerId(randomlyGeneratedId())
-                .teamId(randomlyGeneratedIdAsString())
+                .playerId(randomlyGeneratedIdAsString())
+                .teamId(teamId)
                 .build();
     }
 
@@ -182,17 +182,6 @@ public class StoreNewFixture {
     private String randomlyGeneratedIdAsString() {
         return randomlyGeneratedId().toString();
     }
-
-//    private int randomlyGeneratedId() {
-//        Random random = new Random();
-//        return random.nextInt() + 3;
-//    }
-//
-//    private String randomlyGeneratedIdAsString() {
-//        int id = randomlyGeneratedId();
-//        Integer integer = id;
-//        return integer.toString();
-//    }
 
     private int randomlyGeneratedTimeInSeconds() {
         Random random = new Random();

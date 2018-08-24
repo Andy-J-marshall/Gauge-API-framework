@@ -1,0 +1,15 @@
+{
+  "name": "sbg-technical-tester-assessment",
+  "version": "1.0.0",
+  "description": "Trading Tribe's Technical Tester Assessment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ben Little",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}

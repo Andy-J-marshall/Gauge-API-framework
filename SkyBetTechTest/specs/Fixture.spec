@@ -32,4 +32,5 @@ Multiple goals can be successfully created for a fixture
 tags: CleanupAfterTest
 * Store a new fixture for a completed match with "5" goals
 * Response is returned with status code "200"
-* Check there are "2" goals in the last created fixture ID
+* Get all fixtures
+* Check there are "5" goals in the last created fixture ID
