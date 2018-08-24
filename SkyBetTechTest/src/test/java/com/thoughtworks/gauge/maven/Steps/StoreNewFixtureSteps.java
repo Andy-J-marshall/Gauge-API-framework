@@ -15,23 +15,23 @@ public class StoreNewFixtureSteps {
 
     @Step("Store a new fixture for a completed match with preset data")
     public void storeNewFixtureDefaultValues() throws UnirestException {
-        Fixture fixtureBody = storeNewFixture.createFixtureWithGeneratedValues();
+        Fixture fixtureBody = storeNewFixture.createFixture();
         storeNewFixture.postWithFixtureBody(fixtureBody);
     }
 
     @Step("Store a new fixture for a completed match with home team <homeTeam> and away team <awayTeam>")
     public void storeNewFixtureSpecificTeams2(String homeTeamName, String awayTeamName) throws UnirestException {
-        FootballFullState footballFullState = storeNewFixture.footballFullStateWithGeneratedValues();
+        FootballFullState footballFullState = storeNewFixture.footballFullState();
         footballFullState.setHomeTeam(homeTeamName);
         footballFullState.setAwayTeam(awayTeamName);
         footballFullState.setTeams(storeNewFixture.addTeams(homeTeamName, awayTeamName));
-        FixtureStatus fixtureStatus = storeNewFixture.fixtureStatusWithGeneratedValues();
+        FixtureStatus fixtureStatus = storeNewFixture.fixtureStatus();
         storeNewFixture.postWithFixtureBody(storeNewFixture.createFixture(footballFullState, fixtureStatus));
     }
 
     @Step("Store a new Fixture for a match between home team <homeTeam> and away team <awayTeam> in the minute <timeInMinutes>")
     public void storeNewFixtureIncompleteMatch(String homeTeamName, String awayTeamName, int timeInMinutes) throws UnirestException {
-        FootballFullState footballFullState = storeNewFixture.footballFullStateWithGeneratedValues();
+        FootballFullState footballFullState = storeNewFixture.footballFullState();
         footballFullState.setHomeTeam(homeTeamName);
         footballFullState.setAwayTeam(awayTeamName);
         footballFullState.setTeams(storeNewFixture.addTeams(homeTeamName, awayTeamName));
@@ -40,8 +40,15 @@ public class StoreNewFixtureSteps {
         footballFullState.setPeriod(storeNewFixture.calculatePeriod(timeInMinutes));
         footballFullState.setGameTimeInSeconds(timeInMinutes * 60);
         footballFullState.setFinished(storeNewFixture.calculateGameFinished(timeInMinutes));
-        FixtureStatus fixtureStatus = storeNewFixture.fixtureStatusWithGeneratedValues();
+        FixtureStatus fixtureStatus = storeNewFixture.fixtureStatus();
+        storeNewFixture.postWithFixtureBody(storeNewFixture.createFixture(footballFullState, fixtureStatus));
+    }
 
+    @Step("Store a new fixture for a completed match with <numberOfGoals> goals")
+    public void storeNewFixtureSpecificTeams2(int numberOfGoals) throws UnirestException {
+        FootballFullState footballFullState = storeNewFixture.footballFullState();
+        footballFullState.setGoals(storeNewFixture.addGoals(numberOfGoals));
+        FixtureStatus fixtureStatus = storeNewFixture.fixtureStatus();
         storeNewFixture.postWithFixtureBody(storeNewFixture.createFixture(footballFullState, fixtureStatus));
     }
 }

@@ -25,11 +25,11 @@ public class StoreNewFixture {
         request.postRequest(FIXTURE_ENDPOINT, body);
     }
 
-    public Fixture createFixtureWithGeneratedValues() {
+    public Fixture createFixture() {
         return Fixture.builder()
-                .footballFullState(footballFullStateWithGeneratedValues())
+                .footballFullState(footballFullState())
                 .fixtureId(randomlyGeneratedIdAsString())
-                .fixtureStatus(fixtureStatusWithGeneratedValues())
+                .fixtureStatus(fixtureStatus())
                 .build();
     }
 
@@ -48,7 +48,7 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public FixtureStatus fixtureStatusWithGeneratedValues() {
+    public FixtureStatus fixtureStatus() {
         return FixtureStatus.builder()
                 .displayed(true)
                 .suspended(true)
@@ -69,9 +69,9 @@ public class StoreNewFixture {
         return teams;
     }
 
-    public List<Team> addTeamsWithGeneratedValues() {
-        Team homeTeam = homeTeamWithGeneratedValues();
-        Team awayTeam = awayTeamWithGeneratedValues();
+    public List<Team> addTeams() {
+        Team homeTeam = homeTeam();
+        Team awayTeam = awayTeam();
         return addTeams(homeTeam, awayTeam);
     }
 
@@ -83,7 +83,7 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public Team homeTeamWithGeneratedValues() {
+    public Team homeTeam() {
         return Team.builder()
                 .association("HOME")
                 .name("Barnet")
@@ -91,7 +91,7 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public Team awayTeamWithGeneratedValues() {
+    public Team awayTeam() {
         return Team.builder()
                 .association("AWAY")
                 .name("Real Madrid")
@@ -99,14 +99,28 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public List<Goal> addGoalsWithGeneratedValues() {
+    public List<Goal> addGoals() {
         List<Goal> goals = new ArrayList<>();
-        goals.add(goalWithGeneratedValues());
-        goals.add(goalWithGeneratedValues());
+        goals.add(goal());
+        goals.add(goal());
         return goals;
     }
 
-    public Goal goalWithGeneratedValues() {
+    public List<Goal> addGoals(Goal goal) {
+        List<Goal> goals = new ArrayList<>();
+        goals.add(goal);
+        return goals;
+    }
+
+    public List<Goal> addGoals(int numberOfGoals) {
+        List<Goal> goals = new ArrayList<>();
+        for (int i=0; i<numberOfGoals; i++) {
+            goals.add(goal());
+        }
+        return goals;
+    }
+
+    public Goal goal() {
         return Goal.builder()
                 .clockTime(randomlyGeneratedTimeInSeconds())
                 .confirmed(true)
@@ -119,7 +133,20 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public FootballFullState footballFullStateWithGeneratedValues() {
+    public Goal goal(int clockTime, boolean confirmed, boolean ownGoal, boolean penalty, String period) {
+        return Goal.builder()
+                .clockTime(clockTime)
+                .confirmed(confirmed)
+                .id(randomlyGeneratedId())
+                .ownGoal(ownGoal)
+                .penalty(penalty)
+                .period(period)
+                .playerId(randomlyGeneratedId())
+                .teamId(randomlyGeneratedIdAsString())
+                .build();
+    }
+
+    public FootballFullState footballFullState() {
         return FootballFullState.builder()
                 .homeTeam("Barcelona")
                 .awayTeam("Barnet")
@@ -128,8 +155,8 @@ public class StoreNewFixture {
                 .period("First Half")
                 .startDateTime("2018-07-22T10:49:38.655Z")
                 .started(true)
-                .teams(addTeamsWithGeneratedValues())
-                .goals(addGoalsWithGeneratedValues())
+                .teams(addTeams())
+                .goals(addGoals())
                 .build();
     }
 
