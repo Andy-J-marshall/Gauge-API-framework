@@ -1,17 +1,17 @@
-package com.thoughtworks.gauge.maven.Steps;
+package com.thoughtworks.gauge.maven.steps;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
-import com.thoughtworks.gauge.maven.Endpoints.GetFixture;
-import com.thoughtworks.gauge.maven.Response.POJO.Fixture;
-import com.thoughtworks.gauge.maven.Utils.Request;
+import com.thoughtworks.gauge.maven.endpoints.GetFixture;
+import com.thoughtworks.gauge.maven.responses.Fixture;
+import com.thoughtworks.gauge.maven.utils.Request;
 import org.junit.Assert;
 
-import static com.thoughtworks.gauge.maven.Utils.BaseSteps.GET_FIXTURES_ENDPOINT;
-import static com.thoughtworks.gauge.maven.Utils.BaseSteps.RESPONSE_BODY;
+import static com.thoughtworks.gauge.maven.utils.BaseSteps.GET_FIXTURES_ENDPOINT;
+import static com.thoughtworks.gauge.maven.utils.BaseSteps.RESPONSE_BODY;
 
 public class GetFixtureSteps {
     private DataStore dataStore = DataStoreFactory.getScenarioDataStore();

@@ -1,11 +1,11 @@
-package com.thoughtworks.gauge.maven.Steps;
+package com.thoughtworks.gauge.maven.steps;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Step;
-import com.thoughtworks.gauge.maven.Endpoints.StoreNewFixture;
-import com.thoughtworks.gauge.maven.Response.POJO.Fixture;
-import com.thoughtworks.gauge.maven.Response.POJO.FixtureStatus;
-import com.thoughtworks.gauge.maven.Response.POJO.FootballFullState;
+import com.thoughtworks.gauge.maven.endpoints.StoreNewFixture;
+import com.thoughtworks.gauge.maven.responses.Fixture;
+import com.thoughtworks.gauge.maven.responses.FixtureStatus;
+import com.thoughtworks.gauge.maven.responses.FootballFullState;
 
 import java.time.LocalDateTime;
 

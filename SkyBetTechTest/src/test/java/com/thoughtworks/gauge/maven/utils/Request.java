@@ -1,4 +1,4 @@
-package com.thoughtworks.gauge.maven.Utils;
+package com.thoughtworks.gauge.maven.utils;
 
 import com.google.gson.Gson;
 import com.mashape.unirest.http.HttpResponse;
@@ -7,9 +7,9 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
-import com.thoughtworks.gauge.maven.Response.POJO.Fixture;
+import com.thoughtworks.gauge.maven.responses.Fixture;
 
-import static com.thoughtworks.gauge.maven.Utils.BaseSteps.*;
+import static com.thoughtworks.gauge.maven.utils.BaseSteps.*;
 
 public class Request {
     private DataStore dataStore = DataStoreFactory.getScenarioDataStore();

@@ -1,4 +1,4 @@
-package com.thoughtworks.gauge.maven.Utils;
+package com.thoughtworks.gauge.maven.utils;
 
 import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.datastore.DataStore;
