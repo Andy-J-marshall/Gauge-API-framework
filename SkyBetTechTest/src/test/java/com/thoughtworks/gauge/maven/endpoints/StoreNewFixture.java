@@ -1,17 +1,18 @@
-package com.thoughtworks.gauge.maven.Endpoints;
+package com.thoughtworks.gauge.maven.endpoints;
 
 import com.google.gson.Gson;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
 import com.thoughtworks.gauge.maven.Response.POJO.*;
-import com.thoughtworks.gauge.maven.Utils.Request;
+import com.thoughtworks.gauge.maven.utils.Request;
+import com.thoughtworks.gauge.maven.responses.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static com.thoughtworks.gauge.maven.Utils.BaseSteps.FIXTURE_ENDPOINT;
+import static com.thoughtworks.gauge.maven.utils.BaseSteps.FIXTURE_ENDPOINT;
 
 public class StoreNewFixture {
     private static final String FIXTURE_BODY = "createFixture body";

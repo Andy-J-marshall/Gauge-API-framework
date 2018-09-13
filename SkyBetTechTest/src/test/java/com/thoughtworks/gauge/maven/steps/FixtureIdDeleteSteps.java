@@ -1,16 +1,16 @@
-package com.thoughtworks.gauge.maven.Steps;
+package com.thoughtworks.gauge.maven.steps;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.AfterScenario;
 import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
-import com.thoughtworks.gauge.maven.Endpoints.GetFixture;
-import com.thoughtworks.gauge.maven.Utils.Request;
+import com.thoughtworks.gauge.maven.endpoints.GetFixture;
+import com.thoughtworks.gauge.maven.utils.Request;
 import org.junit.Assert;
 
-import static com.thoughtworks.gauge.maven.Utils.BaseSteps.FIXTURE_BY_ID_ENDPOINT;
-import static com.thoughtworks.gauge.maven.Utils.BaseSteps.STATUS_CODE;
+import static com.thoughtworks.gauge.maven.utils.BaseSteps.FIXTURE_BY_ID_ENDPOINT;
+import static com.thoughtworks.gauge.maven.utils.BaseSteps.STATUS_CODE;
 
 public class FixtureIdDeleteSteps {
     private DataStore dataStore = DataStoreFactory.getScenarioDataStore();
