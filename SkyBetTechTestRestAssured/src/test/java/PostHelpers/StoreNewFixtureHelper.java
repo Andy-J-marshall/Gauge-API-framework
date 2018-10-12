@@ -1,9 +1,10 @@
-package com.thoughtworks.gauge.maven.endpoints;
+package CopiedFiles.endpoints;
 
 import com.google.gson.Gson;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.datastore.DataStore;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
+import com.thoughtworks.gauge.maven.Response.POJO.*;
 import com.thoughtworks.gauge.maven.responses.*;
 import com.thoughtworks.gauge.maven.utils.Request;
 
