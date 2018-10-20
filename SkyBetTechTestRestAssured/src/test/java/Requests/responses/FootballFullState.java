@@ -1,4 +1,4 @@
-package com.thoughtworks.gauge.maven.responses;
+package Requests.responses;
 
 import lombok.Builder;
 import lombok.Getter;

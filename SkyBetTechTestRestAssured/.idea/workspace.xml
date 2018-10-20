@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b988562e-f3dd-494d-90eb-bbab906bc515" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/PostHelpers/StoreNewFixtureHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostHelpers/StoreNewFixtureHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Requests/responses/Fixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Requests/responses/Fixture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Requests/responses/FixtureStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Requests/responses/FixtureStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Requests/responses/FootballFullState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Requests/responses/FootballFullState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Requests/responses/Goal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Requests/responses/Goal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Requests/responses/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Requests/responses/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/.nvmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/package-lock.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1149697462">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="235" />
+          <entry key="xml" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="235" />
+          <entry key="XML" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="3" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="3" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="423780601">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="19" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="5" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="5" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="4" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="27" />
+          <entry key="json" value="4" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="4" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="27" />
+          <entry key="JSON" value="4" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="21" />
+          <entry key="java" value="4620" />
+          <entry key="xml" value="25" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="4620" />
+          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="XML" value="25" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestScenarios/TestNGExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-end-line="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.1.1/rest-assured-3.1.1.jar!/io/restassured/response/Response.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/resources/exampleResponse.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+              <folding>
+                <element signature="e#433#443#0" />
+                <element signature="e#464#474#0" />
+                <element signature="e#1788#3060#0" />
+                <element signature="e#1815#2954#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Requests/responses/Fixture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PostHelpers/StoreNewFixtureHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>BLAHBLAH</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/maven/responses/FixtureStatus.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CopiedFiles/responses/FixtureStatus.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Endpoints/Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Endpoints/TestNGExample.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Requests/responses/Fixture.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PostHelpers/StoreNewFixtureHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestScenarios/TestNGExample.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SkyBetTechTest-RestAssured" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="9" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="975" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SkyBetTechTestRestAssured" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SkyBetTechTestRestAssured" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SkyBetTechTestRestAssured" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SkyBetTechTestRestAssured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SkyBetTechTestRestAssured" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SkyBetTechTestRestAssured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SkyBetTechTestRestAssured" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SkyBetTechTestRestAssured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SkyBetTechTestRestAssured" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SkyBetTechTestRestAssured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="PostHelpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SkyBetTechTestRestAssured" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SkyBetTechTestRestAssured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="responses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SkyBetTechTestRestAssured" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SkyBetTechTestRestAssured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SkyBetTechTestRestAssured" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SkyBetTechTestRestAssured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="TestScenarios" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540078762581" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Selenium" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.54252875" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrew\Documents\Workspace\Sky Bet\SkyBetTechTestRestAssured\src\test\java\Requests" />
+      <recent name="C:\Users\Andrew\Documents\Workspace\Sky Bet\SkyBetTechTestRestAssured\src\test\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.TestNGExample.newlyAddedFixtureHasTeamIdOfHome2">
+    <configuration name="TestNGExample" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SkyBetTechTest-RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestScenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestScenarios" />
+      <option name="MAIN_CLASS_NAME" value="TestScenarios.TestNGExample" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGExample.deleteLastCreatedFixture" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SkyBetTechTest-RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestScenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestScenarios" />
+      <option name="MAIN_CLASS_NAME" value="TestScenarios.TestNGExample" />
+      <option name="METHOD_NAME" value="deleteLastCreatedFixture" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGExample.fixtureIdsAreReturned" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SkyBetTechTest-RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestScenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestScenarios" />
+      <option name="MAIN_CLASS_NAME" value="TestScenarios.TestNGExample" />
+      <option name="METHOD_NAME" value="fixtureIdsAreReturned" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SkyBetTechTest-RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestScenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestScenarios" />
+      <option name="MAIN_CLASS_NAME" value="TestScenarios.TestNGExample" />
+      <option name="METHOD_NAME" value="newlyAddedFixtureHasTeamIdOfHome" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SkyBetTechTest-RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestScenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestScenarios" />
+      <option name="MAIN_CLASS_NAME" value="TestScenarios.TestNGExample" />
+      <option name="METHOD_NAME" value="newlyAddedFixtureHasTeamIdOfHome2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.TestNGExample.fixtureIdsAreReturned" />
+      <item itemvalue="TestNG.TestNGExample.newlyAddedFixtureHasTeamIdOfHome" />
+      <item itemvalue="TestNG.TestNGExample.deleteLastCreatedFixture" />
+      <item itemvalue="TestNG.TestNGExample" />
+      <item itemvalue="TestNG.TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" />
+        <item itemvalue="TestNG.TestNGExample.deleteLastCreatedFixture" />
+        <item itemvalue="TestNG.TestNGExample" />
+        <item itemvalue="TestNG.TestNGExample.newlyAddedFixtureHasTeamIdOfHome" />
+        <item itemvalue="TestNG.TestNGExample.fixtureIdsAreReturned" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b988562e-f3dd-494d-90eb-bbab906bc515" name="Default Changelist" comment="" />
+      <created>1537908564318</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537908564318</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestNGExample_newlyAddedFixtureHasTeamIdOfHome2 - 2018.10.21 at 00h 01m 27s.xml">
+      <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestNGExample_newlyAddedFixtureHasTeamIdOfHome2 - 2018.10.21 at 00h 07m 26s.xml">
+      <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestNGExample_newlyAddedFixtureHasTeamIdOfHome2 - 2018.10.21 at 00h 10m 03s.xml">
+      <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestNGExample_newlyAddedFixtureHasTeamIdOfHome2 - 2018.10.21 at 00h 25m 37s.xml">
+      <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestNGExample_newlyAddedFixtureHasTeamIdOfHome2 - 2018.10.21 at 00h 26m 20s.xml">
+      <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestNGExample_newlyAddedFixtureHasTeamIdOfHome2 - 2018.10.21 at 00h 29m 07s.xml">
+      <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestNGExample_newlyAddedFixtureHasTeamIdOfHome2 - 2018.10.21 at 00h 33m 36s.xml">
+      <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestNGExample_newlyAddedFixtureHasTeamIdOfHome2 - 2018.10.21 at 00h 34m 33s.xml">
+      <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestNGExample_newlyAddedFixtureHasTeamIdOfHome2 - 2018.10.21 at 00h 35m 23s.xml">
+      <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestNGExample_newlyAddedFixtureHasTeamIdOfHome2 - 2018.10.21 at 00h 38m 21s.xml">
+      <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.2624161" />
+      <window_info id="Structure" order="1" sideWeight="0.5010571" side_tool="true" weight="0.22214764" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34017596" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32844576" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" weight="0.2771261" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49840087" weight="0.32844576" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3295302" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/TestScenarios/TestNGExample.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.1.1/rest-assured-3.1.1.jar!/io/restassured/specification/RequestSpecification.class" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/CopiedFiles/responses/Team.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/CopiedFiles/responses/Goal.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/CopiedFiles/steps/FixtureIdDeleteSteps.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/CopiedFiles/steps/StoreNewFixtureSteps.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/CopiedFiles/responses/FixtureStatus.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/CopiedFiles/endpoints/GetFixture.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/CopiedFiles/utils/Request.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/CopiedFiles/utils/BaseSteps.java" />
+    <entry file="file://$PROJECT_DIR$/SkyBetTechTestRestAssured.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CopiedFiles/steps/GetFixtureSteps.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Requests/responses/Goal.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Requests/responses/Team.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Requests/responses/FootballFullState.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Requests/responses/FixtureStatus.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.base/java/lang/ref/SoftReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="477" selection-start-line="477" selection-end-line="477" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PostHelpers/StoreNewFixtureHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Requests/responses/Fixture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/exampleResponse.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+          <folding>
+            <element signature="e#433#443#0" />
+            <element signature="e#464#474#0" />
+            <element signature="e#1788#3060#0" />
+            <element signature="e#1815#2954#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.1.1/rest-assured-3.1.1.jar!/io/restassured/response/Response.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestScenarios/TestNGExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54252875" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54252875" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54252875" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54252875" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SkyBetTechTest-RestAssured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54252875" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.54252875" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

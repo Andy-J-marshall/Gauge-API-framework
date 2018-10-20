@@ -1,30 +1,16 @@
-package CopiedFiles.endpoints;
+package PostHelpers;
 
+import Requests.responses.*;
 import com.google.gson.Gson;
-import com.mashape.unirest.http.exceptions.UnirestException;
-import com.thoughtworks.gauge.datastore.DataStore;
-import com.thoughtworks.gauge.datastore.DataStoreFactory;
-import com.thoughtworks.gauge.maven.Response.POJO.*;
-import com.thoughtworks.gauge.maven.responses.*;
-import com.thoughtworks.gauge.maven.utils.Request;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static com.thoughtworks.gauge.maven.utils.BaseSteps.FIXTURE_ENDPOINT;
-
-public class StoreNewFixture {
-    private static final String FIXTURE_BODY = "createFixture body";
-    private Request request = new Request();
+public class StoreNewFixtureHelper {
     private Gson gson = new Gson();
-    private DataStore dataStore = DataStoreFactory.getScenarioDataStore();
 
-    public void postWithFixtureBody(Fixture fixtureBody) throws UnirestException {
-        String body = gson.toJson(fixtureBody);
-        dataStore.put(FIXTURE_BODY, fixtureBody);
-        request.postRequest(FIXTURE_ENDPOINT, body);
-    }
 
     public Fixture createFixture() {
         return Fixture.builder()
@@ -42,41 +28,41 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public FixtureStatus fixtureStatus(Boolean displayed, Boolean suspended) {
+    private FixtureStatus fixtureStatus(Boolean displayed, Boolean suspended) {
         return FixtureStatus.builder()
                 .displayed(displayed)
                 .suspended(suspended)
                 .build();
     }
 
-    public FixtureStatus fixtureStatus() {
+    private FixtureStatus fixtureStatus() {
         return FixtureStatus.builder()
                 .displayed(true)
                 .suspended(true)
                 .build();
     }
 
-    public List<Team> addTeams(Team homeTeam, Team awayTeam) {
-        List<Team> teams = new ArrayList<>();
+    private List<Team> addTeams(Team homeTeam, Team awayTeam) {
+        List<Team> teams = new ArrayList<Team>();
         teams.add(homeTeam);
         teams.add(awayTeam);
         return teams;
     }
 
     public List<Team> addTeams(String homeTeam, String awayTeam) {
-        List<Team> teams = new ArrayList<>();
+        List<Team> teams = new ArrayList<Team>();
         teams.add(team("HOME", homeTeam));
         teams.add(team("AWAY", awayTeam));
         return teams;
     }
 
-    public List<Team> addTeams() {
+    private List<Team> addTeams() {
         Team homeTeam = homeTeam();
         Team awayTeam = awayTeam();
         return addTeams(homeTeam, awayTeam);
     }
 
-    public Team team(String association, String name) {
+    private Team team(String association, String name) {
         return Team.builder()
                 .association(association)
                 .name(name)
@@ -84,7 +70,7 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public Team homeTeam() {
+    private Team homeTeam() {
         return Team.builder()
                 .association("HOME")
                 .name("Barnet")
@@ -92,7 +78,7 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public Team awayTeam() {
+    private Team awayTeam() {
         return Team.builder()
                 .association("AWAY")
                 .name("Real Madrid")
@@ -100,28 +86,28 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public List<Goal> addGoals() {
-        List<Goal> goals = new ArrayList<>();
+    private List<Goal> addGoals() {
+        List<Goal> goals = new ArrayList<Goal>();
         goals.add(goal());
         goals.add(goal());
         return goals;
     }
 
-    public List<Goal> addGoals(Goal goal) {
-        List<Goal> goals = new ArrayList<>();
+    private List<Goal> addGoals(Goal goal) {
+        List<Goal> goals = new ArrayList<Goal>();
         goals.add(goal);
         return goals;
     }
 
-    public List<Goal> addGoals(int numberOfGoals) {
-        List<Goal> goals = new ArrayList<>();
+    private List<Goal> addGoals(int numberOfGoals) {
+        List<Goal> goals = new ArrayList<Goal>();
         for (int i=0; i<numberOfGoals; i++) {
             goals.add(goal());
         }
         return goals;
     }
 
-    public Goal goal() {
+    private Goal goal() {
         return Goal.builder()
                 .clockTime(randomlyGeneratedTimeInSeconds())
                 .confirmed(true)
@@ -134,7 +120,7 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public Goal goal(int clockTime, boolean confirmed, boolean ownGoal, boolean penalty, String period, String teamId) {
+    private Goal goal(int clockTime, boolean confirmed, boolean ownGoal, boolean penalty, String period, String teamId) {
         return Goal.builder()
                 .clockTime(clockTime)
                 .confirmed(confirmed)
@@ -147,7 +133,7 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public FootballFullState footballFullState() {
+    private FootballFullState footballFullState() {
         return FootballFullState.builder()
                 .homeTeam("Barcelona")
                 .awayTeam("Barnet")
@@ -161,7 +147,7 @@ public class StoreNewFixture {
                 .build();
     }
 
-    public FootballFullState footballFullState(String homeTeam, String awayTeam, Boolean finished, int gameTimeInSeconds, String period, String startDateTime, Boolean started, List<Team> team, List<Goal> goal) {
+    private FootballFullState footballFullState(String homeTeam, String awayTeam, Boolean finished, int gameTimeInSeconds, String period, String startDateTime, Boolean started, List<Team> team, List<Goal> goal) {
         return FootballFullState.builder()
                 .homeTeam(homeTeam)
                 .awayTeam(awayTeam)
@@ -189,7 +175,7 @@ public class StoreNewFixture {
         return random.nextInt(5399) + 1;
     }
 
-    public String calculatePeriod(int timeInMinutes) {
+    private String calculatePeriod(int timeInMinutes) {
         String period;
         if (timeInMinutes >= 46) {
             period = "Second Half";
@@ -199,7 +185,7 @@ public class StoreNewFixture {
         return period;
     }
 
-    public Boolean calculateGameFinished(int timeInMinutes) {
+    private Boolean calculateGameFinished(int timeInMinutes) {
         if (timeInMinutes >= 90) {
             return true;
         } else {
@@ -207,7 +193,7 @@ public class StoreNewFixture {
         }
     }
 
-    public Boolean calculateGameStarted(int timeInMinutes) {
+    private Boolean calculateGameStarted(int timeInMinutes) {
         if (timeInMinutes > 0) {
             return true;
         } else {
