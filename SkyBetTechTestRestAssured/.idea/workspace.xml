@@ -2,10 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b988562e-f3dd-494d-90eb-bbab906bc515" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestScenarios/RequestHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/requestHelper/DeleteRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/requestHelper/GetRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/requestHelper/PostRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/requestHelper/TestState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testScenarios/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestScenarios/TestNGExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestScenarios/TestNGExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestScenarios/TestNGExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestScenarios/TestNGExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PostHelpers/StoreNewFixtureHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/requestHelper/StoreNewFixtureHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Requests/responses/Fixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/createFixture/Fixture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Requests/responses/FixtureStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/createFixture/FixtureStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Requests/responses/FootballFullState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/createFixture/FootballFullState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Requests/responses/Goal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/createFixture/Goal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Requests/responses/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/createFixture/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestScenarios/RequestHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestScenarios/TestNGExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testScenarios/AllTestsToSplit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PostHelpers/StoreNewFixtureHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Requests/responses/Fixture$FixtureBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Requests/responses/Fixture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Requests/responses/FixtureStatus$FixtureStatusBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Requests/responses/FixtureStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Requests/responses/FootballFullState$FootballFullStateBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Requests/responses/FootballFullState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Requests/responses/Goal$GoalBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Requests/responses/Goal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Requests/responses/Team$TeamBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Requests/responses/Team.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestScenarios/RequestHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestScenarios/TestNGExample.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/.nvmrc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/package-lock.json" afterDir="false" />
@@ -61,24 +84,25 @@
     <session id="423780601">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="27" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="5" />
-          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.4" value="6" />
+          <entry key="project.open.time.5" value="6" />
           <entry key="project.open.time.6" value="5" />
-          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
           <entry key="iml" value="1" />
-          <entry key="java" value="33" />
-          <entry key="json" value="4" />
+          <entry key="java" value="71" />
+          <entry key="json" value="6" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
@@ -86,22 +110,22 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="33" />
-          <entry key="JSON" value="4" />
+          <entry key="JAVA" value="71" />
+          <entry key="JSON" value="6" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="38" />
-          <entry key="java" value="5713" />
+          <entry key="dummy" value="76" />
+          <entry key="java" value="7530" />
           <entry key="xml" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5713" />
-          <entry key="PLAIN_TEXT" value="38" />
+          <entry key="JAVA" value="7530" />
+          <entry key="PLAIN_TEXT" value="76" />
           <entry key="XML" value="25" />
         </counts>
       </usages-collector>
@@ -110,26 +134,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestScenarios/TestNGExample.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/AllTestsToSplit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-start-column="2" selection-end-line="61" selection-end-column="66" />
+            <state relative-caret-position="1054">
+              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2889#2890#0" expanded="true" />
-                <element signature="e#2938#2939#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestScenarios/RequestHelper.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            <state relative-caret-position="334">
+              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1077#1078#0" expanded="true" />
+                <element signature="e#1124#1125#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,7 +191,23 @@
         <option value="$PROJECT_DIR$/src/test/java/Requests.java" />
         <option value="$PROJECT_DIR$/src/test/java/RequestHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestScenarios/RequestHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PostHelpers/RequestHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestScenarios/TestNGExample.java" />
+        <option value="$PROJECT_DIR$/src/test/java/postHelpers/StoreNewFixtureHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/requestHelper/postRequest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/requestHelper/deleteRequest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/requestHelper/RequestHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/requestHelper/getRequest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testScenarios/TestNGExample.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pojos/createFixture/Team.java" />
+        <option value="$PROJECT_DIR$/src/test/java/requestHelper/GetRequests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/requestHelper/DeleteRequests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/requestHelper/PostRequests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/requestHelper/TestState.java" />
+        <option value="$PROJECT_DIR$/src/test/java/requestHelper/StoreNewFixtureHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testScenarios/Hooks.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testScenarios/AllTestsToSplit.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testScenarios/BaseTest.java" />
       </list>
     </option>
   </component>
@@ -193,9 +233,9 @@
     <option name="jreName" value="9" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
+    <option name="x" value="-9" />
     <option name="width" value="975" />
-    <option name="height" value="1050" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -203,6 +243,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,7 +276,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="requestHelper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SkyBetTechTestRestAssured" type="b2602c69:ProjectViewProjectNode" />
@@ -242,18 +284,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TestScenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="testScenarios" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540086103371" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540598172981" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Selenium" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -285,89 +325,146 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestNGExample.deleteLastCreatedFixture">
-    <configuration name="TestNGExample" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AllTestsToSplit">
+    <configuration name="AllTestsToSplit" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SkyBetTechTest-RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TestScenarios.*" />
+          <option name="PATTERN" value="testScenarios.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestScenarios" />
-      <option name="MAIN_CLASS_NAME" value="TestScenarios.TestNGExample" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testScenarios" />
+      <option name="MAIN_CLASS_NAME" value="testScenarios.AllTestsToSplit" />
+      <option name="GROUP_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNGExample.deleteLastCreatedFixture" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AllTestsToSplit.cleanupHook" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SkyBetTechTest-RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TestScenarios.*" />
+          <option name="PATTERN" value="testScenarios.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestScenarios" />
-      <option name="MAIN_CLASS_NAME" value="TestScenarios.TestNGExample" />
-      <option name="METHOD_NAME" value="deleteLastCreatedFixture" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testScenarios" />
+      <option name="MAIN_CLASS_NAME" value="testScenarios.AllTestsToSplit" />
+      <option name="METHOD_NAME" value="cleanupHook" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNGExample.fixtureIdsAreReturned" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AllTestsToSplit.fixtureIdsAreReturned" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SkyBetTechTest-RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TestScenarios.*" />
+          <option name="PATTERN" value="testScenarios.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestScenarios" />
-      <option name="MAIN_CLASS_NAME" value="TestScenarios.TestNGExample" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testScenarios" />
+      <option name="MAIN_CLASS_NAME" value="testScenarios.AllTestsToSplit" />
       <option name="METHOD_NAME" value="fixtureIdsAreReturned" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AllTestsToSplit.newlyAddedFixtureHasTeamIdOfHome" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SkyBetTechTest-RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TestScenarios.*" />
+          <option name="PATTERN" value="testScenarios.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestScenarios" />
-      <option name="MAIN_CLASS_NAME" value="TestScenarios.TestNGExample" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testScenarios" />
+      <option name="MAIN_CLASS_NAME" value="testScenarios.AllTestsToSplit" />
       <option name="METHOD_NAME" value="newlyAddedFixtureHasTeamIdOfHome" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseTest.toDelete" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SkyBetTechTest-RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TestScenarios.*" />
+          <option name="PATTERN" value="testScenarios.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestScenarios" />
-      <option name="MAIN_CLASS_NAME" value="TestScenarios.TestNGExample" />
-      <option name="METHOD_NAME" value="newlyAddedFixtureHasTeamIdOfHome2" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testScenarios" />
+      <option name="MAIN_CLASS_NAME" value="testScenarios.BaseTest" />
+      <option name="METHOD_NAME" value="toDelete" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testScenarios" />
+      <option name="MAIN_CLASS_NAME" value="testScenarios.AllTestsToSplit" />
+      <option name="GROUP_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -375,19 +472,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.TestNGExample.fixtureIdsAreReturned" />
-      <item itemvalue="TestNG.TestNGExample.newlyAddedFixtureHasTeamIdOfHome" />
-      <item itemvalue="TestNG.TestNGExample.deleteLastCreatedFixture" />
-      <item itemvalue="TestNG.TestNGExample" />
-      <item itemvalue="TestNG.TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" />
+      <item itemvalue="TestNG.AllTestsToSplit" />
+      <item itemvalue="TestNG.AllTestsToSplit.cleanupHook" />
+      <item itemvalue="TestNG.AllTestsToSplit.fixtureIdsAreReturned" />
+      <item itemvalue="TestNG.AllTestsToSplit.newlyAddedFixtureHasTeamIdOfHome" />
+      <item itemvalue="TestNG.BaseTest.toDelete" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestNGExample.deleteLastCreatedFixture" />
-        <item itemvalue="TestNG.TestNGExample.fixtureIdsAreReturned" />
-        <item itemvalue="TestNG.TestNGExample.newlyAddedFixtureHasTeamIdOfHome" />
-        <item itemvalue="TestNG.TestNGExample" />
-        <item itemvalue="TestNG.TestNGExample.newlyAddedFixtureHasTeamIdOfHome2" />
+        <item itemvalue="TestNG.AllTestsToSplit" />
+        <item itemvalue="TestNG.AllTestsToSplit.newlyAddedFixtureHasTeamIdOfHome" />
+        <item itemvalue="TestNG.AllTestsToSplit.fixtureIdsAreReturned" />
+        <item itemvalue="TestNG.BaseTest.toDelete" />
+        <item itemvalue="TestNG.AllTestsToSplit.cleanupHook" />
       </list>
     </recent_temporary>
   </component>
@@ -405,35 +502,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNGExample_deleteLastCreatedFixture - 2018.10.21 at 02h 09m 36s.xml">
-      <configuration name="TestNGExample.deleteLastCreatedFixture" configurationId="TestNG" />
+    <history-entry file="AllTestsToSplit - 2018.10.27 at 00h 27m 13s.xml">
+      <configuration name="AllTestsToSplit" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGExample_deleteLastCreatedFixture - 2018.10.21 at 02h 12m 52s.xml">
-      <configuration name="TestNGExample.deleteLastCreatedFixture" configurationId="TestNG" />
+    <history-entry file="AllTestsToSplit_fixtureIdsAreReturned - 2018.10.27 at 00h 27m 34s.xml">
+      <configuration name="AllTestsToSplit.fixtureIdsAreReturned" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGExample_deleteLastCreatedFixture - 2018.10.21 at 02h 16m 36s.xml">
-      <configuration name="TestNGExample.deleteLastCreatedFixture" configurationId="TestNG" />
+    <history-entry file="BaseTest_toDelete - 2018.10.27 at 00h 28m 59s.xml">
+      <configuration name="BaseTest.toDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGExample_deleteLastCreatedFixture - 2018.10.21 at 02h 25m 04s.xml">
-      <configuration name="TestNGExample.deleteLastCreatedFixture" configurationId="TestNG" />
+    <history-entry file="AllTestsToSplit - 2018.10.27 at 00h 29m 29s.xml">
+      <configuration name="AllTestsToSplit" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGExample - 2018.10.21 at 02h 32m 18s.xml">
-      <configuration name="TestNGExample" configurationId="TestNG" />
+    <history-entry file="AllTestsToSplit - 2018.10.27 at 00h 31m 06s.xml">
+      <configuration name="AllTestsToSplit" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGExample_newlyAddedFixtureHasTeamIdOfHome - 2018.10.21 at 02h 35m 28s.xml">
-      <configuration name="TestNGExample.newlyAddedFixtureHasTeamIdOfHome" configurationId="TestNG" />
+    <history-entry file="AllTestsToSplit - 2018.10.27 at 00h 31m 49s.xml">
+      <configuration name="AllTestsToSplit" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGExample_fixtureIdsAreReturned - 2018.10.21 at 02h 39m 44s.xml">
-      <configuration name="TestNGExample.fixtureIdsAreReturned" configurationId="TestNG" />
+    <history-entry file="AllTestsToSplit_fixtureIdsAreReturned - 2018.10.27 at 00h 42m 21s.xml">
+      <configuration name="AllTestsToSplit.fixtureIdsAreReturned" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGExample_fixtureIdsAreReturned - 2018.10.21 at 02h 40m 42s.xml">
-      <configuration name="TestNGExample.fixtureIdsAreReturned" configurationId="TestNG" />
+    <history-entry file="AllTestsToSplit - 2018.10.27 at 00h 43m 25s.xml">
+      <configuration name="AllTestsToSplit" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGExample_fixtureIdsAreReturned - 2018.10.21 at 02h 40m 54s.xml">
-      <configuration name="TestNGExample.fixtureIdsAreReturned" configurationId="TestNG" />
+    <history-entry file="AllTestsToSplit - 2018.10.27 at 00h 46m 30s.xml">
+      <configuration name="AllTestsToSplit" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNGExample_fixtureIdsAreReturned - 2018.10.21 at 02h 41m 46s.xml">
-      <configuration name="TestNGExample.fixtureIdsAreReturned" configurationId="TestNG" />
+    <history-entry file="AllTestsToSplit_newlyAddedFixtureHasTeamIdOfHome - 2018.10.27 at 00h 47m 46s.xml">
+      <configuration name="AllTestsToSplit.newlyAddedFixtureHasTeamIdOfHome" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -449,7 +546,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.26644295" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.2946309" />
       <window_info id="Structure" order="1" sideWeight="0.5010571" side_tool="true" weight="0.22214764" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -457,15 +554,15 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34017596" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34017596" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32844576" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" weight="0.2771261" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991204" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49840087" weight="0.32844576" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
@@ -484,6 +581,15 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>fixture.getFixtureId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.1.1/rest-assured-3.1.1.jar!/io/restassured/specification/RequestSpecification.class" />
     <entry file="file://$PROJECT_DIR$/src/test/java/CopiedFiles/responses/Team.java" />
@@ -498,12 +604,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CopiedFiles/steps/GetFixtureSteps.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Requests/responses/Goal.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Requests/responses/FixtureStatus.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -525,38 +625,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/resources/exampleResponse.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.1.1/rest-assured-3.1.1.jar!/io/restassured/response/Response.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Requests/responses/FootballFullState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Requests/responses/Fixture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Requests/responses/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -567,16 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PostHelpers/StoreNewFixtureHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runner/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -584,24 +646,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestScenarios/RequestHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/RequestHelper.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/exampleResponse.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pojos/createFixture/Fixture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pojos/createFixture/FixtureStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pojos/createFixture/FootballFullState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pojos/createFixture/Goal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pojos/createFixture/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/DeleteRequests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestScenarios/TestNGExample.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/PostRequests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-start-column="2" selection-end-line="61" selection-end-column="66" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2889#2890#0" expanded="true" />
-            <element signature="e#2938#2939#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/GetRequests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/StoreNewFixtureHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/Hooks.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/TestState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+          <folding>
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/AllTestsToSplit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
