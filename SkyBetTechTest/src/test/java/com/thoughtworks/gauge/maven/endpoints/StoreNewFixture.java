@@ -114,7 +114,7 @@ public class StoreNewFixture {
 
     public List<Goal> addGoals(int numberOfGoals) {
         List<Goal> goals = new ArrayList<>();
-        for (int i=0; i<numberOfGoals; i++) {
+        for (int i = 0; i < numberOfGoals; i++) {
             goals.add(goal());
         }
         return goals;
@@ -188,29 +188,15 @@ public class StoreNewFixture {
         return random.nextInt(5399) + 1;
     }
 
-    public String calculatePeriod(int timeInMinutes) {
-        String period;
-        if (timeInMinutes >= 46) {
-            period = "Second Half";
-        } else {
-            period = "First Half";
-        }
-        return period;
+    private String calculatePeriod(int timeInMinutes) {
+        return timeInMinutes >= 46 ? "second half" : "first half";
     }
 
     public Boolean calculateGameFinished(int timeInMinutes) {
-        if (timeInMinutes >= 90) {
-            return true;
-        } else {
-            return false;
-        }
+        return timeInMinutes >= 90;
     }
 
     public Boolean calculateGameStarted(int timeInMinutes) {
-        if (timeInMinutes > 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return timeInMinutes > 0;
     }
 }
