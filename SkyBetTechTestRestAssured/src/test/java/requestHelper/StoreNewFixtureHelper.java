@@ -8,7 +8,14 @@ import java.util.Random;
 
 public class StoreNewFixtureHelper {
 
-    public Fixture createFixture() {
+    public String createFixtureAndReturnFixtureId() {
+        PostRequests postRequests = new PostRequests();
+        Fixture fixture = createFixtureBody();
+        postRequests.postNewFixtureRequest(fixture, 200);
+        return fixture.getFixtureId();
+    }
+
+    private Fixture createFixtureBody() {
         return Fixture.builder()
                 .fixtureId(randomlyGeneratedIdAsString())
                 .fixtureStatus(fixtureStatus())
@@ -16,7 +23,7 @@ public class StoreNewFixtureHelper {
                 .build();
     }
 
-    public Fixture createFixture(FootballFullState footballFullState, FixtureStatus fixtureStatus) {
+    public Fixture createFixtureBody(FootballFullState footballFullState, FixtureStatus fixtureStatus) {
         return Fixture.builder()
                 .fixtureId(randomlyGeneratedIdAsString())
                 .fixtureStatus(fixtureStatus)
@@ -45,7 +52,7 @@ public class StoreNewFixtureHelper {
         return teams;
     }
 
-    public List<Team> addTeams(String homeTeam, String awayTeam) {
+    private List<Team> addTeams(String homeTeam, String awayTeam) {
         List<Team> teams = new ArrayList<Team>();
         teams.add(team("HOME", homeTeam));
         teams.add(team("AWAY", awayTeam));

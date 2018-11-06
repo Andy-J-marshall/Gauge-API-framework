@@ -1,16 +1,23 @@
 package testScenarios;
 
+import com.google.gson.Gson;
 import io.restassured.response.ValidatableResponse;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import requestHelper.DeleteRequests;
 import requestHelper.GetRequests;
+import requestHelper.StoreNewFixtureHelper;
 
 import java.util.List;
 
 public class BaseTest {
     private GetRequests getRequests = new GetRequests();
     private DeleteRequests deleteRequests = new DeleteRequests();
+
+    public final static String BASE_URL = "http://localhost:3000";
+
+    protected Gson gson = new Gson();
+    protected StoreNewFixtureHelper storeNewFixtureHelper = new StoreNewFixtureHelper();
 
     @BeforeSuite
     public void cleanupFixturesBeforeTestExecution() {

@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import pojos.createFixture.Fixture;
 import requestHelper.DeleteRequests;
 import requestHelper.GetRequests;
-import requestHelper.PostRequests;
 import requestHelper.StoreNewFixtureHelper;
 
 import static io.restassured.RestAssured.when;
@@ -21,7 +20,6 @@ public class AllTestsToSplit extends BaseTest {
 
     private Gson gson = new Gson();
     private StoreNewFixtureHelper storeNewFixtureHelper = new StoreNewFixtureHelper();
-    private PostRequests postRequests = new PostRequests();
     private GetRequests getRequests = new GetRequests();
     private DeleteRequests deleteRequests = new DeleteRequests();
 
@@ -34,10 +32,7 @@ public class AllTestsToSplit extends BaseTest {
 
     @Test
     public void newlyAddedFixtureHasTeamIdOfHome() {
-        Fixture requestBody = storeNewFixtureHelper.createFixture();
-        String fixtureId = requestBody.getFixtureId();
-        postRequests.postNewFixtureRequest(requestBody, 200);
-
+        String fixtureId = storeNewFixtureHelper.createFixtureAndReturnFixtureId();
         Response response = when().get(BASE_URL + "/fixtures");
         Fixture[] responseBody = gson.fromJson(response.body().asString(), Fixture[].class);
 
@@ -50,10 +45,7 @@ public class AllTestsToSplit extends BaseTest {
 
     @Test
     public void deleteLastCreatedFixture() {
-        Fixture requestBody = storeNewFixtureHelper.createFixture();
-        postRequests.postNewFixtureRequest(requestBody, 200);
-
-        String fixtureId = requestBody.getFixtureId();
+        String fixtureId = storeNewFixtureHelper.createFixtureAndReturnFixtureId();
         deleteRequests.deleteFixtureRequest(fixtureId, 200);
         getRequests.getSpecificFixtureIdRequest(fixtureId, 404);
 
@@ -65,7 +57,6 @@ public class AllTestsToSplit extends BaseTest {
 
 
 // TO DO
-//find a nice way to use a datastore kind of thing. Use a
 //split tests and code up more
 //Use testng annotations and find way to run it in better way
 //deal with environment config
