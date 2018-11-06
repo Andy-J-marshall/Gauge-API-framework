@@ -179,28 +179,14 @@ public class StoreNewFixtureHelper {
     }
 
     private String calculatePeriod(int timeInMinutes) {
-        String period;
-        if (timeInMinutes >= 46) {
-            period = "Second Half";
-        } else {
-            period = "First Half";
-        }
-        return period;
+        return timeInMinutes >= 46 ? "second half" : "first half";
     }
 
     private Boolean calculateGameFinished(int timeInMinutes) {
-        if (timeInMinutes >= 90) {
-            return true;
-        } else {
-            return false;
-        }
+        return timeInMinutes >= 90;
     }
 
     private Boolean calculateGameStarted(int timeInMinutes) {
-        if (timeInMinutes > 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return timeInMinutes > 0;
     }
 }

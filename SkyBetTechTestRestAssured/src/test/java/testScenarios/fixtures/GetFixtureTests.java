@@ -1,7 +1,8 @@
-package testScenarios;
+package testScenarios.fixtures;
 
 import io.restassured.response.ValidatableResponse;
 import org.testng.annotations.Test;
+import testScenarios.BaseTest;
 
 import static org.hamcrest.Matchers.*;
 
@@ -13,5 +14,4 @@ public class GetFixtureTests extends BaseTest {
         response.and().body("fixtureId.size()", is(equalTo(3)))
                 .and().body("fixtureId", everyItem(notNullValue()));
     }
-
 }

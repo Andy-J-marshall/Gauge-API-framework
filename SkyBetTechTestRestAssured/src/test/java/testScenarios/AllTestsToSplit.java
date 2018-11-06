@@ -59,5 +59,7 @@ public class AllTestsToSplit extends BaseTest {
 // TO DO
 //split tests and code up more
 //Use testng annotations and find way to run it in better way
+// test ng config file
 //deal with environment config
 //organise code
+//delete this class once finished refactoring

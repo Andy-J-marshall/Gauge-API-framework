@@ -11,11 +11,9 @@ import requestHelper.StoreNewFixtureHelper;
 import java.util.List;
 
 public class BaseTest {
-    private GetRequests getRequests = new GetRequests();
-    private DeleteRequests deleteRequests = new DeleteRequests();
-
-    public final static String BASE_URL = "http://localhost:3000";
-
+    protected final static String BASE_URL = "http://localhost:3000";
+    protected GetRequests getRequests = new GetRequests();
+    protected DeleteRequests deleteRequests = new DeleteRequests();
     protected Gson gson = new Gson();
     protected StoreNewFixtureHelper storeNewFixtureHelper = new StoreNewFixtureHelper();
 

@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b988562e-f3dd-494d-90eb-bbab906bc515" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/testScenarios/fixtures/CreateFixtureTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testScenarios/fixtures/DeleteFixtures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/requestHelper/StoreNewFixtureHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/requestHelper/StoreNewFixtureHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/requestHelper/TestState.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testScenarios/AllTestsToSplit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testScenarios/AllTestsToSplit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/requestHelper/StoreNewFixtureHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/requestHelper/StoreNewFixtureHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testScenarios/AllTestsToSplit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testScenarios/AllTestsToSplit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testScenarios/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testScenarios/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testScenarios/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testScenarios/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testScenarios/GetFixtureTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testScenarios/fixtures/GetFixtureTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/.nvmrc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../trading-tribe-technical-test-assessment/package-lock.json" afterDir="false" />
@@ -80,7 +82,7 @@
         <counts>
           <entry key="class" value="4" />
           <entry key="iml" value="1" />
-          <entry key="java" value="73" />
+          <entry key="java" value="79" />
           <entry key="json" value="6" />
           <entry key="xml" value="3" />
         </counts>
@@ -89,7 +91,7 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="73" />
+          <entry key="JAVA" value="79" />
           <entry key="JSON" value="6" />
           <entry key="XML" value="3" />
         </counts>
@@ -97,13 +99,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="76" />
-          <entry key="java" value="7739" />
+          <entry key="java" value="8006" />
           <entry key="xml" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7739" />
+          <entry key="JAVA" value="8006" />
           <entry key="PLAIN_TEXT" value="76" />
           <entry key="XML" value="25" />
         </counts>
@@ -112,11 +114,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/AllTestsToSplit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="295">
+              <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,12 +127,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/StoreNewFixtureHelper.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/DeleteRequests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/fixtures/CreateFixtureTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/fixtures/GetFixtureTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/StoreNewFixtureHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="194" column="30" selection-start-line="194" selection-start-column="30" selection-end-line="194" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5923#5924#0" expanded="true" />
+                <element signature="e#5996#5997#0" expanded="true" />
+                <element signature="e#5912#5913#0" expanded="true" />
+                <element signature="e#5954#5955#0" expanded="true" />
+                <element signature="e#6094#6095#0" expanded="true" />
+                <element signature="e#6134#6135#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +183,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+            <state relative-caret-position="343">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/fixtures/DeleteFixtures.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,6 +250,9 @@
         <option value="$PROJECT_DIR$/src/test/java/requestHelper/PostRequests.java" />
         <option value="$PROJECT_DIR$/src/test/java/requestHelper/TestState.java" />
         <option value="$PROJECT_DIR$/src/test/java/testScenarios/Hooks.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testScenarios/GetFixtureTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testScenarios/CreateFixtureTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testScenarios/DeleteFixtures.java" />
         <option value="$PROJECT_DIR$/src/test/java/testScenarios/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/testScenarios/AllTestsToSplit.java" />
         <option value="$PROJECT_DIR$/src/test/java/requestHelper/StoreNewFixtureHelper.java" />
@@ -275,6 +334,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testScenarios" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SkyBetTechTestRestAssured" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SkyBetTechTestRestAssured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testScenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -282,7 +350,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540602507490" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541545240846" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Selenium" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -294,12 +362,12 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Andrew\Documents\Workspace\Sky Bet\SkyBetTechTestRestAssured\src\test\java\Requests" />
       <recent name="C:\Users\Andrew\Documents\Workspace\Sky Bet\SkyBetTechTestRestAssured\src\test\java" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -314,45 +382,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AllTestsToSplit">
-    <configuration name="AllTestsToSplit" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StoreNewFixtureHelper.test">
+    <configuration name="StoreNewFixtureHelper.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SkyBetTechTest-RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testScenarios.*" />
+          <option name="PATTERN" value="requestHelper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testScenarios" />
-      <option name="MAIN_CLASS_NAME" value="testScenarios.AllTestsToSplit" />
-      <option name="GROUP_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="requestHelper" />
+      <option name="MAIN_CLASS_NAME" value="requestHelper.StoreNewFixtureHelper" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllTestsToSplit.cleanupHook" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AllTestsToSplit" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SkyBetTechTest-RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testScenarios.*" />
+          <option name="PATTERN" value="testScenarios.fixtures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testScenarios" />
       <option name="MAIN_CLASS_NAME" value="testScenarios.AllTestsToSplit" />
-      <option name="METHOD_NAME" value="cleanupHook" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -369,7 +427,7 @@
       <module name="SkyBetTechTest-RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testScenarios.*" />
+          <option name="PATTERN" value="testScenarios.fixtures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -395,7 +453,7 @@
       <module name="SkyBetTechTest-RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testScenarios.*" />
+          <option name="PATTERN" value="testScenarios.fixtures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -421,7 +479,7 @@
       <module name="SkyBetTechTest-RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testScenarios.*" />
+          <option name="PATTERN" value="testScenarios.fixtures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -462,18 +520,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.AllTestsToSplit" />
-      <item itemvalue="TestNG.AllTestsToSplit.cleanupHook" />
       <item itemvalue="TestNG.AllTestsToSplit.fixtureIdsAreReturned" />
       <item itemvalue="TestNG.AllTestsToSplit.newlyAddedFixtureHasTeamIdOfHome" />
       <item itemvalue="TestNG.BaseTest.toDelete" />
+      <item itemvalue="JUnit.StoreNewFixtureHelper.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StoreNewFixtureHelper.test" />
         <item itemvalue="TestNG.AllTestsToSplit" />
         <item itemvalue="TestNG.AllTestsToSplit.newlyAddedFixtureHasTeamIdOfHome" />
         <item itemvalue="TestNG.AllTestsToSplit.fixtureIdsAreReturned" />
         <item itemvalue="TestNG.BaseTest.toDelete" />
-        <item itemvalue="TestNG.AllTestsToSplit.cleanupHook" />
       </list>
     </recent_temporary>
   </component>
@@ -549,7 +607,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32844576" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" weight="0.2771261" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" visible="true" weight="0.2771261" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991204" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49840087" weight="0.32844576" />
@@ -678,16 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/DeleteRequests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/PostRequests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -706,27 +754,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/Hooks.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/TestState.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/fixtures/CreateFixtureTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+        <state relative-caret-position="148">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/StoreNewFixtureHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/fixtures/DeleteFixtures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/fixtures/GetFixtureTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -735,10 +786,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/AllTestsToSplit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="295">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testScenarios/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/TestState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/DeleteRequests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/requestHelper/StoreNewFixtureHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="194" column="30" selection-start-line="194" selection-start-column="30" selection-end-line="194" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5923#5924#0" expanded="true" />
+            <element signature="e#5996#5997#0" expanded="true" />
+            <element signature="e#5912#5913#0" expanded="true" />
+            <element signature="e#5954#5955#0" expanded="true" />
+            <element signature="e#6094#6095#0" expanded="true" />
+            <element signature="e#6134#6135#0" expanded="true" />
           </folding>
         </state>
       </provider>
